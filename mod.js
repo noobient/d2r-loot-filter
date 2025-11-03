@@ -425,7 +425,7 @@ const profileHDFilename = 'global\\ui\\layouts\\_profilehd.json';
 const profileHD = D2RMM.readJson(profileHDFilename);
 profileHD.TooltipStyle.inGameBackgroundColor = [0,0,0,0.85],
 profileHD.TooltipStyle.backgroundColor = [0,0,0,0.9],
-profileHD.TooltipFontSize = 32,
+//profileHD.TooltipFontSize = 32,
 profileHD.TooltipStyle.inGameShowItemsSelectedBackgroundColor = [0.1,0.1,0.2,1],
 D2RMM.writeJson(profileHDFilename, profileHD);
 
