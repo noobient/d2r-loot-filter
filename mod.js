@@ -63,7 +63,7 @@ itemNames.forEach((item) => {
 
   // Full Rejuvination Potion
   if (itemtype === 'rvl') {
-    newName = `ÿc;!ÿc0Full`;
+    newName = `ÿc;!FullRejuva`;
   }
 
   // Thawing Potion
