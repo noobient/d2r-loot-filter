@@ -27,7 +27,7 @@ itemNames.forEach((item) => {
   let newName = null;
 
   if (basesToFind.has(itemtype)) {
-    newName = `ÿc;*ÿc2*ÿc1*    ÿc@` + basesToFind.get(itemtype) + `    ÿc;*ÿc2*ÿc1*`;
+    newName = basesToFind.get(itemtype) + ` ÿc;*ÿc2*ÿc1* ÿc@Base ÿc;*ÿc2*ÿc1*`;
   }
 
   // Scroll of Town Portal
