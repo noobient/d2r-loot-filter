@@ -3,5 +3,45 @@
   "description": "Shortens scrolls, potions, gold. Highlights charms/gems/potions/runes",
   "author": "Noobient",
   "website": "https://noobient.com",
-  "version": "0.1"
+  "version": "0.1",
+  "config": [
+    {
+      "id": "highlightBases",
+      "name": "Hightlight Bases",
+      "description": "Option to hightlight desirable bases",
+      "type": "section",
+      "children": [
+        {
+          "id": "elite",
+          "name": "Elite",
+          "description": "Elite items",
+          "type": "section",
+          "children": [
+            {
+              "id": "armor",
+              "name": "Armor",
+              "description": "Armors",
+              "type": "section",
+              "children": [
+                {
+                  "defaultValue": false,
+                  "name": "Dusk Shroud",
+                  "description": "Dusk Shroud",
+                  "id": "uui",
+                  "type": "checkbox"
+                },
+                {
+                  "defaultValue": false,
+                  "name": "Archon Plate",
+                  "description": "Archon Plate",
+                  "id": "utp",
+                  "type": "checkbox"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }

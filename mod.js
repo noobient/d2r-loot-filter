@@ -2,10 +2,7 @@
 const itemNamesFilename = 'local\\lng\\strings\\item-names.json';
 const itemNames = D2RMM.readJson(itemNamesFilename);
 
-// Uncomment the ones you want highlighted.
-// You can add your own items, just look up the 'Key' and item name in
-// C:\Program Files (x86)\Diablo II Resurrected\Data\local\lng\strings\item-names.json
-const basesToFind = new Map([
+const baseNames = new Map([
   ['utp', 'Archon Plate'],
   // ['ci0', 'Circlet'],
   // ['crs', 'Crystal Sword'],
@@ -26,8 +23,9 @@ itemNames.forEach((item) => {
   const itemtype = item.Key;
   let newName = null;
 
-  if (basesToFind.has(itemtype)) {
-    newName = basesToFind.get(itemtype) + ` ÿc;*ÿc2*ÿc1* ÿc@Base ÿc;*ÿc2*ÿc1*`;
+  // highlight base item if set to be highlighted, but first check if it actually exists in the config
+  if (Object.hasOwn(config, itemtype) && config[itemtype]) {
+    newName = baseNames.get(itemtype) + ` ÿc;*ÿc2*ÿc1* ÿc@Base ÿc;*ÿc2*ÿc1*`;
   }
 
   // Scroll of Town Portal
