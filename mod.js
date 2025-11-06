@@ -149,6 +149,151 @@ itemNameAffixes.forEach((item) => {
 });
 D2RMM.writeJson(itemNameAffixesFilename, itemNameAffixes);
 
+const lightBeamParticleJson = {
+  "path": "data/hd/vfx/particles/overlays/object/horadric_light/fx_horadric_light.particles"
+}
+
+const lightBeamEntityJson = [
+  {
+    "type": "Entity",
+    "name": "droplight",
+    "id": 9999996974,
+    "components": [
+      {
+        "type": "TransformDefinitionComponent",
+        "name": "component_transform1",
+        "position": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "orientation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 1.0
+        },
+        "scale": {
+          "x": 2.0,
+          "y": 2.0,
+          "z": 2.0
+        },
+        "inheritOnlyPosition": false
+      },
+      {
+        "type": "VfxDefinitionComponent",
+        "name": "entity_vfx_gousemyideaandshareyourfilthymods",
+        "filename": "data/hd/vfx/particles/overlays/common/valkyriestart/valkriestart_overlay.particles",
+        "hardKillOnDestroy": false
+      }
+    ]
+  },
+  {
+    "type": "Entity",
+    "name": "droplight",
+    "id": 9999996974,
+    "components": [
+      {
+        "type": "TransformDefinitionComponent",
+        "name": "component_transform1",
+        "position": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "orientation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 5.0
+        },
+        "scale": {
+          "x": 2.0,
+          "y": 2.0,
+          "z": 2.0
+        },
+        "inheritOnlyPosition": false
+      },
+      {
+        "type": "VfxDefinitionComponent",
+        "name": "entity_vfx_gousemyideaandshareyourfilthymods",
+        "filename": "data/hd/vfx/particles/overlays/object/horadric_light/fx_horadric_light.particles",
+        "hardKillOnDestroy": false
+      }
+    ]
+  },
+  {
+    "type": "Entity",
+    "name": "droplight",
+    "id": 9999996975,
+    "components": [
+      {
+        "type": "TransformDefinitionComponent",
+        "name": "component_transform1",
+        "position": {
+          "x": 0.0,
+          "y": -5.0,
+          "z": 0.0
+        },
+        "orientation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 5.0
+        },
+        "scale": {
+          "x": 2.0,
+          "y": 2.0,
+          "z": 2.0
+        },
+        "inheritOnlyPosition": false
+      },
+      {
+        "type": "VfxDefinitionComponent",
+        "name": "entity_vfx_gousemyideaandshareyourfilthymods",
+        "filename": "data/hd/vfx/particles/overlays/object/horadric_light/fx_horadric_light.particles",
+        "hardKillOnDestroy": false
+      }
+    ]
+  },
+  {
+    "type": "Entity",
+    "name": "droplight",
+    "id": 9999996976,
+    "components": [
+      {
+        "type": "TransformDefinitionComponent",
+        "name": "component_transform1",
+        "position": {
+          "x": 0.0,
+          "y": -3.0,
+          "z": 0.0
+        },
+        "orientation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 5.0
+        },
+        "scale": {
+          "x": 2.0,
+          "y": 2.0,
+          "z": 2.0
+        },
+        "inheritOnlyPosition": false
+      },
+      {
+        "type": "VfxDefinitionComponent",
+        "name": "entity_vfx_gousemyideaandshareyourfilthymods",
+        "filename": "data/hd/vfx/particles/overlays/object/horadric_light/fx_horadric_light.particles",
+        "hardKillOnDestroy": false
+      }
+    ]
+  }
+]
+
+// Directory containing rune definitions
+const runesDir = "hd\\items\\misc\\rune";
 
 //Change high rune names on the ground
 const itemRunesFilename = 'local\\lng\\strings\\item-runes.json';
@@ -157,6 +302,24 @@ const itemRunes = D2RMM.readJson(itemRunesFilename);
 itemRunes.forEach((item) => {
   const itemtype = item.Key;
   let newName = null;
+
+  if (Object.hasOwn(config, "lbr_" + itemtype) && config["lbr_" + itemtype]) {
+    // Get the string "Pul Rune", get the first word, convert to lowercase, append the rest
+    const runeFile = runesDir + "\\" + item.enUS.split(" ")[0].toLowerCase() + "_rune.json";
+
+    // Read the rune JSON file
+    var runeJson = D2RMM.readJson(runeFile);
+
+    // Extend the JSON with the light beam stuff
+    runeJson.dependencies.particles.push(lightBeamParticleJson);
+
+    for(var i in lightBeamEntityJson) {
+        runeJson.entities.push(lightBeamEntityJson[i]);
+    }
+
+    // Write the rune file
+    D2RMM.writeJson(runeFile, runeJson);
+  }
 
   switch(itemtype) {
     // Low runes from El to Lem
@@ -179,11 +342,11 @@ itemRunes.forEach((item) => {
     case "r17":
     case "r18":
     case "r19":
-    case "r20":
       // remove leading 'r', then convert to number to remove any leading zero for first 9 levels
       newName = item.enUS + ` ÿc5[ÿc7` + Number(itemtype.substring(1)) + `ÿc5]`;
       break;
-    // Pul, Um, Mal, Ist
+    // Lem, Pul, Um, Mal, Ist
+    case "r20":
     case "r21":
     case "r22":
     case "r23":
@@ -216,6 +379,7 @@ itemRunes.forEach((item) => {
     }
   }
 });
+
 D2RMM.writeJson(itemRunesFilename, itemRunes);
 
 
@@ -229,10 +393,3 @@ profileHD.TooltipStyle.backgroundColor = [0,0,0,0.9],
 //profileHD.TooltipFontSize = 32,
 profileHD.TooltipStyle.inGameShowItemsSelectedBackgroundColor = [0.1,0.1,0.2,1],
 D2RMM.writeJson(profileHDFilename, profileHD);
-
-
-
-
-
-//this simply copies the rune.json files instead of modifying each one with code which I am too dumb to understand how to do. It gets the job done, it may cause issues if you have other mods that modify the runes.json files (extremely unlikely).
-D2RMM.copyFile('hd','hd',true);

@@ -6,6 +6,225 @@
   "version": "0.1",
   "config": [
     {
+      "id": "illuminateRunes",
+      "name": "Illuminate Runes",
+      "description": "Illuminate runes when dropped.",
+      "type": "section",
+      "children": [
+        {
+          "id": "lowRunes",
+          "name": "Low Runes",
+          "type": "section",
+          "defaultExpanded": false,
+          "children": [
+            {
+              "id": "lbr_r01",
+              "name": "El",
+              "type": "checkbox"
+            },
+            {
+              "id": "lbr_r02",
+              "name": "Eld",
+              "type": "checkbox"
+            },
+            {
+              "id": "lbr_r03",
+              "name": "Tir",
+              "type": "checkbox"
+            },
+            {
+              "id": "lbr_r04",
+              "name": "Nef",
+              "type": "checkbox"
+            },
+            {
+              "id": "lbr_r05",
+              "name": "Eth",
+              "type": "checkbox"
+            },
+            {
+              "id": "lbr_r06",
+              "name": "Ith",
+              "type": "checkbox"
+            },
+            {
+              "id": "lbr_r07",
+              "name": "Tal",
+              "type": "checkbox"
+            },
+            {
+              "id": "lbr_r08",
+              "name": "Ral",
+              "type": "checkbox"
+            },
+            {
+              "id": "lbr_r09",
+              "name": "Ort",
+              "type": "checkbox"
+            },
+            {
+              "id": "lbr_r10",
+              "name": "Thul",
+              "type": "checkbox"
+            },
+            {
+              "id": "lbr_r11",
+              "name": "Amn",
+              "type": "checkbox"
+            },
+            {
+              "id": "lbr_r12",
+              "name": "Sol",
+              "type": "checkbox"
+            },
+            {
+              "id": "lbr_r13",
+              "name": "Shael",
+              "type": "checkbox"
+            },
+            {
+              "id": "lbr_r14",
+              "name": "Dol",
+              "type": "checkbox"
+            },
+            {
+              "id": "lbr_r15",
+              "name": "Hel",
+              "type": "checkbox"
+            },
+            {
+              "id": "lbr_r16",
+              "name": "Io",
+              "type": "checkbox"
+            },
+            {
+              "id": "lbr_r17",
+              "name": "Lum",
+              "type": "checkbox"
+            },
+            {
+              "id": "lbr_r18",
+              "name": "Ko",
+              "type": "checkbox"
+            },
+            {
+              "id": "lbr_r19",
+              "name": "Fal",
+              "type": "checkbox"
+            }
+          ]
+        },
+        {
+          "id": "mediumRunes",
+          "name": "Medium Runes",
+          "type": "section",
+          "defaultExpanded": false,
+          "children": [
+            {
+              "id": "lbr_r20",
+              "name": "Lem",
+              "type": "checkbox",
+              "defaultValue": true
+            },
+            {
+              "id": "lbr_r21",
+              "name": "Pul",
+              "type": "checkbox",
+              "defaultValue": true
+            },
+            {
+              "id": "lbr_r22",
+              "name": "Um",
+              "type": "checkbox",
+              "defaultValue": true
+            },
+            {
+              "id": "lbr_r23",
+              "name": "Mal",
+              "type": "checkbox",
+              "defaultValue": true
+            },
+            {
+              "id": "lbr_r24",
+              "name": "Ist",
+              "type": "checkbox",
+              "defaultValue": true
+            }
+          ]
+        },
+        {
+          "id": "mediumHighRunes",
+          "name": "Medium-High Runes",
+          "type": "section",
+          "defaultExpanded": false,
+          "children": [
+            {
+              "id": "lbr_r25",
+              "name": "Gul",
+              "type": "checkbox",
+              "defaultValue": true
+            },
+            {
+              "id": "lbr_r26",
+              "name": "Vex",
+              "type": "checkbox",
+              "defaultValue": true
+            },
+            {
+              "id": "lbr_r27",
+              "name": "Ohm",
+              "type": "checkbox",
+              "defaultValue": true
+            },
+            {
+              "id": "lbr_r28",
+              "name": "Lo",
+              "type": "checkbox",
+              "defaultValue": true
+            }
+          ]
+        },
+        {
+          "id": "highRunes",
+          "name": "High Runes",
+          "type": "section",
+          "defaultExpanded": false,
+          "children": [
+            {
+              "id": "lbr_r29",
+              "name": "Sur",
+              "type": "checkbox",
+              "defaultValue": true
+            },
+            {
+              "id": "lbr_r30",
+              "name": "Ber",
+              "type": "checkbox",
+              "defaultValue": true
+            },
+            {
+              "id": "lbr_r31",
+              "name": "Jah",
+              "type": "checkbox",
+              "defaultValue": true
+            },
+            {
+              "id": "lbr_r32",
+              "name": "Cham",
+              "type": "checkbox",
+              "defaultValue": true
+            },
+            {
+              "id": "lbr_r33",
+              "name": "Zod",
+              "type": "checkbox",
+              "defaultValue": true
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "highlightBases",
       "name": "Highlight Bases",
       "description": "Option to highlight desirable bases with a colorful suffix. Due to technical limitations, this will also apply to magic, rare, and unique items.",
