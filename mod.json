@@ -421,6 +421,39 @@
               ]
             },
             {
+              "id": "normalOrb",
+              "name": "Orb",
+              "type": "section",
+              "defaultExpanded": false,
+              "children": [
+                {
+                  "id": "bth_ob1",
+                  "name": "Eagle Orb",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_ob2",
+                  "name": "Sacred Globe",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_ob3",
+                  "name": "Smoked Sphere",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_ob4",
+                  "name": "Clasped Orb",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_ob5",
+                  "name": "Jared's Stone",
+                  "type": "checkbox"
+                }
+              ]
+            },
+            {
               "id": "normalPolearm",
               "name": "Polearm",
               "type": "section",
@@ -755,6 +788,39 @@
               ]
             },
             {
+              "id": "exceptionalOrb",
+              "name": "Orb",
+              "type": "section",
+              "defaultExpanded": false,
+              "children": [
+                {
+                  "id": "bth_ob6",
+                  "name": "Glowing Orb",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_ob7",
+                  "name": "Crystalline Globe",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_ob8",
+                  "name": "Cloudy Sphere",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_ob9",
+                  "name": "Sparkling Ball",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_oba",
+                  "name": "Swirling Crystal",
+                  "type": "checkbox"
+                }
+              ]
+            },
+            {
               "id": "exceptionalPolearm",
               "name": "Polearm",
               "type": "section",
@@ -1084,6 +1150,39 @@
                 {
                   "id": "bth_7qr",
                   "name": "Scissors Suwayyah",
+                  "type": "checkbox"
+                }
+              ]
+            },
+            {
+              "id": "eliteOrb",
+              "name": "Orb",
+              "type": "section",
+              "defaultExpanded": false,
+              "children": [
+                {
+                  "id": "bth_obb",
+                  "name": "Heavenly Stone",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_obc",
+                  "name": "Eldritch Orb",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_obd",
+                  "name": "Demon Heart",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_obe",
+                  "name": "Vortex Orb",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_obf",
+                  "name": "Dimensional Shard",
                   "type": "checkbox"
                 }
               ]
