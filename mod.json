@@ -454,6 +454,39 @@
               ]
             },
             {
+              "id": "normalPelt",
+              "name": "Pelt",
+              "type": "section",
+              "defaultExpanded": false,
+              "children": [
+                {
+                  "id": "bth_dr1",
+                  "name": "Wolf Head",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_dr2",
+                  "name": "Hawk Helm",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_dr3",
+                  "name": "Antlers",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_dr4",
+                  "name": "Falcon Mask",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_dr5",
+                  "name": "Spirit Mask",
+                  "type": "checkbox"
+                }
+              ]
+            },
+            {
               "id": "normalPolearm",
               "name": "Polearm",
               "type": "section",
@@ -821,6 +854,39 @@
               ]
             },
             {
+              "id": "exceptionalPelt",
+              "name": "Pelt",
+              "type": "section",
+              "defaultExpanded": false,
+              "children": [
+                {
+                  "id": "bth_dr6",
+                  "name": "Alpha Helm",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_dr7",
+                  "name": "Griffon Headdress",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_dr8",
+                  "name": "Hunter's Guise",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_dr9",
+                  "name": "Sacred Feathers",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_dra",
+                  "name": "Totemic Mask",
+                  "type": "checkbox"
+                }
+              ]
+            },
+            {
               "id": "exceptionalPolearm",
               "name": "Polearm",
               "type": "section",
@@ -1183,6 +1249,39 @@
                 {
                   "id": "bth_obf",
                   "name": "Dimensional Shard",
+                  "type": "checkbox"
+                }
+              ]
+            },
+            {
+              "id": "elitePelt",
+              "name": "Pelt",
+              "type": "section",
+              "defaultExpanded": false,
+              "children": [
+                {
+                  "id": "bth_drb",
+                  "name": "Blood Spirit",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_drc",
+                  "name": "Sun Spirit",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_drd",
+                  "name": "Earth Spirit",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_dre",
+                  "name": "Sky Spirit",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_drf",
+                  "name": "Dream Spirit",
                   "type": "checkbox"
                 }
               ]
