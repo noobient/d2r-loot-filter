@@ -82,10 +82,13 @@ itemNames.forEach((item) => {
       newName = `ÿc3!ÿc0Mp`;
       break;
     case "cm1": // Small Charm
-      newName = `• ÿcNSmall Charm`;
+      newName = `Small Charm ÿcN•`;
+      break;
+    case "cm2": // Large Charm
+      newName = `Large Charm ÿcN••`;
       break;
     case "cm3": // Grand Charm
-      newName = `• ÿcNGrand Charm`;
+      newName = `Grand Charm ÿcN•••`;
       break;
     case "jew": // Jewel
       newName = `• ÿcNJewel`;
