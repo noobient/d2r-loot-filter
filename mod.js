@@ -76,30 +76,31 @@ itemNames.forEach((item) => {
 });
 D2RMM.writeJson(itemNamesFilename, itemNames);
 
+// Change gold item label on the ground
+if (Object.hasOwn(config, "misc_gold") && config["misc_gold"]) {
+  const itemNameAffixesFilename = 'local\\lng\\strings\\item-nameaffixes.json';
+  const itemNameAffixes = D2RMM.readJson(itemNameAffixesFilename);
 
-//Change gold item label on the ground
-const itemNameAffixesFilename = 'local\\lng\\strings\\item-nameaffixes.json';
-const itemNameAffixes = D2RMM.readJson(itemNameAffixesFilename);
+  itemNameAffixes.forEach((item) => {
+    const itemtype = item.Key;
+    let newName = null;
 
-itemNameAffixes.forEach((item) => {
-  const itemtype = item.Key;
-  let newName = null;
+    // Gold
+    if (itemtype === 'gld') {
+      newName = ``;
+    }
 
-  // Gold
-  if (itemtype === 'gld') {
-    newName = ``;
-  }
-
-  if (newName != null) {
-    // update all localizations
-    for (const key in item) {
-      if (key !== 'id' && key !== 'Key') {
-        item[key] = newName;
+    if (newName != null) {
+      // update all localizations
+      for (const key in item) {
+        if (key !== 'id' && key !== 'Key') {
+          item[key] = newName;
+        }
       }
     }
-  }
-});
-D2RMM.writeJson(itemNameAffixesFilename, itemNameAffixes);
+  });
+  D2RMM.writeJson(itemNameAffixesFilename, itemNameAffixes);
+}
 
 const lightBeamParticleJson = {
   "path": "data/hd/vfx/particles/overlays/object/horadric_light/fx_horadric_light.particles"
