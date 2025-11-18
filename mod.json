@@ -505,6 +505,39 @@
                   "type": "checkbox"
                 }
               ]
+            },
+            {
+              "id": "normalSpear",
+              "name": "Spear",
+              "type": "section",
+              "defaultExpanded": false,
+              "children": [
+                {
+                  "id": "bth_spr",
+                  "name": "Spear",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_tri",
+                  "name": "Trident",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_brn",
+                  "name": "Brandistock",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_spt",
+                  "name": "Spetum",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_pik",
+                  "name": "Pike",
+                  "type": "checkbox"
+                }
+              ]
             }
           ]
         },
@@ -778,6 +811,39 @@
                   "type": "checkbox"
                 }
               ]
+            },
+            {
+              "id": "exceptionalSpear",
+              "name": "Spear",
+              "type": "section",
+              "defaultExpanded": false,
+              "children": [
+                {
+                  "id": "bth_9sr",
+                  "name": "War Spear",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_9tr",
+                  "name": "Fuscina",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_9br",
+                  "name": "War Fork",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_9st",
+                  "name": "Yari",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_9p9",
+                  "name": "Lance",
+                  "type": "checkbox"
+                }
+              ]
             }
           ]
         },
@@ -1048,6 +1114,39 @@
                 {
                   "id": "bth_uts",
                   "name": "Ward",
+                  "type": "checkbox"
+                }
+              ]
+            },
+            {
+              "id": "eliteSpear",
+              "name": "Spear",
+              "type": "section",
+              "defaultExpanded": false,
+              "children": [
+                {
+                  "id": "bth_7sr",
+                  "name": "Hyperion Spear",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_7tr",
+                  "name": "Stygian Pike",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_7br",
+                  "name": "Mancatcher",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_7st",
+                  "name": "Ghost Spear",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_7p7",
+                  "name": "War Pike",
                   "type": "checkbox"
                 }
               ]
