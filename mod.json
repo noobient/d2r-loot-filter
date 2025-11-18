@@ -421,6 +421,44 @@
               ]
             },
             {
+              "id": "normalPolearm",
+              "name": "Polearm",
+              "type": "section",
+              "defaultExpanded": false,
+              "children": [
+                {
+                  "id": "bth_bar",
+                  "name": "Bardiche",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_vou",
+                  "name": "Voulge",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_scy",
+                  "name": "Scythe",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_pax",
+                  "name": "Poleaxe",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_hal",
+                  "name": "Halberd",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_wsc",
+                  "name": "War Scythe",
+                  "type": "checkbox"
+                }
+              ]
+            },
+            {
               "id": "normalShield",
               "name": "Shield",
               "type": "section",
@@ -656,6 +694,44 @@
               ]
             },
             {
+              "id": "exceptionalPolearm",
+              "name": "Polearm",
+              "type": "section",
+              "defaultExpanded": false,
+              "children": [
+                {
+                  "id": "bth_9b7",
+                  "name": "Lochaber Axe",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_9vo",
+                  "name": "Bill",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_9s8",
+                  "name": "Battle Scythe",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_9pa",
+                  "name": "Partizan",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_9h9",
+                  "name": "Bec-De-Corbin",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_9wc",
+                  "name": "Grim Scythe",
+                  "type": "checkbox"
+                }
+              ]
+            },
+            {
               "id": "exceptionalShield",
               "name": "Shield",
               "type": "section",
@@ -886,6 +962,44 @@
                 {
                   "id": "bth_7qr",
                   "name": "Scissors Suwayyah",
+                  "type": "checkbox"
+                }
+              ]
+            },
+            {
+              "id": "elitePolearm",
+              "name": "Polearm",
+              "type": "section",
+              "defaultExpanded": false,
+              "children": [
+                {
+                  "id": "bth_7o7",
+                  "name": "Ogre Axe",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_7vo",
+                  "name": "Colossus Voulge",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_7s8",
+                  "name": "Thresher",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_7pa",
+                  "name": "Cryptic Axe",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_7h7",
+                  "name": "Great Poleaxe",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_7wc",
+                  "name": "Giant Thresher",
                   "type": "checkbox"
                 }
               ]
