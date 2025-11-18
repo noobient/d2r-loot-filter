@@ -91,7 +91,7 @@ itemNames.forEach((item) => {
       newName = `Grand Charm ÿcN•••`;
       break;
     case "jew": // Jewel
-      newName = `• ÿcNJewel`;
+      newName = `• Jewel •ÿcN`;
       break;
     case "gzv": // F Amethyst
       newName = `ÿc7[ÿc;@ÿc7] ÿc0Flawless Amethyst`;
