@@ -1,6 +1,4 @@
-//Change items in item-names.json (potions, scrolls, charms, jewels)
-const itemNamesFilename = 'local\\lng\\strings\\item-names.json';
-const itemNames = D2RMM.readJson(itemNamesFilename);
+const langJsonDir = "local\\lng\\strings";
 
 function addLightBeam(jsonFile) {
     // Read the JSON file
@@ -16,6 +14,117 @@ function addLightBeam(jsonFile) {
     // Write the JSON file
     D2RMM.writeJson(jsonFile, itemJson);
 }
+
+function highlightGems(jsonFile) {
+  const jsonFilePath = langJsonDir + "\\" + jsonFile + ".json";
+
+  // Parse the JSON holding the items
+  const itemJson = D2RMM.readJson(jsonFilePath);
+
+  itemJson.forEach((item) => {
+    let newName = null;
+    let gemPrefix = null;
+    let gemColor = null;
+    let itemFirstWord = item.enUS.split(" ")[0];
+
+    switch (itemFirstWord) {
+      case "Chipped":
+        gemPrefix = "-";
+        break;
+      case "Flawed":
+        gemPrefix = "+";
+        break;
+      case "Flawless":
+        gemPrefix = "@";
+        break;
+      case "Perfect":
+        gemPrefix = "O";
+        break;
+      default: // "Normal" gems don't have a prefix
+        gemPrefix = "*";
+    }
+
+    switch(item.Key) {
+      case "gcv": // Chipped Amethyst
+      case "gfv": // Flawed Amethyst
+      case "gsv": // Amethyst
+      case "gzv": // Flawless Amethyst
+      case "gpv": // Perfect Amethyst
+        gemColor = `ÿc;`
+        break;
+      case "gcy": // Chipped Topaz
+      case "gfy": // Flawed Topaz
+      case "gsy": // Topaz
+      case "gly": // Flawless Topaz
+      case "gpy": // Perfect Topaz
+        gemColor = `ÿc9`;
+        break;
+      case "skc": // Chipped Skull
+      case "skf": // Flawed Skull
+      case "sku": // Skull
+      case "skl": // Flawless Skull
+      case "skz": // Perfect Skull
+        gemColor = `ÿc5`;
+        break;
+      case "gcb": // Chipped Sapphire
+      case "gfb": // Flawed Sapphire
+      case "gsb": // Sapphire
+      case "glb": // Flawless Sapphire
+      case "gpb": // Perfect Sapphire
+        gemColor = `ÿcN`;
+        break;
+      case "gcg": // Chipped Emerald
+      case "gfg": // Flawed Emerald
+      case "gsg": // Emerald
+      case "glg": // Flawless Emerald
+      case "gpg": // Perfect Emerald
+        gemColor = `ÿcQ`;
+        break;
+      case "gcr": // Chipped Ruby
+      case "gfr": // Flawed Ruby
+      case "gsr": // Ruby
+      case "glr": // Flawless Ruby
+      case "gpr": // Perfect Ruby
+        gemColor = `ÿcU`;
+        break;
+      case "gcw": // Chipped Diamond
+      case "gfw": // Flawed Diamond
+      case "gsw": // Diamond
+      case "glw": // Flawless Diamond
+      case "gpw": // Perfect Diamond
+        gemColor = `ÿcF`;
+        break;
+    }
+
+    // Now gemColor is only non-null if it's a gem
+    // item-nameaffixes has duplicate entries, e.g. Key = 'Emerald' which is an affix, not an item
+    // However, the length of the key of items is always 3, so check for that
+    if (gemColor != null && item.Key.length == 3) {
+      newName = `ÿc7[` + gemColor + gemPrefix + `ÿc7] ÿc0` + item.enUS;
+
+      // Update all localizations
+      for (const key in item) {
+        if (key !== 'id' && key !== 'Key') {
+          item[key] = newName;
+        }
+      }
+    }
+  });
+
+  D2RMM.writeJson(jsonFilePath, itemJson);
+}
+
+// More vivid gem names
+if (Object.hasOwn(config, "misc_gemhl") && config["misc_gemhl"]) {
+  highlightGems("item-names");
+  // For whatever braindamaged reason, the normal Sapphire, Emerald, Ruby and Diamond
+  // definitions are not in item-names, but in item-nameaffixes instead
+  highlightGems("item-nameaffixes");
+}
+
+//Change items in item-names.json (potions, scrolls, charms, jewels)
+const itemNamesFilename = 'local\\lng\\strings\\item-names.json';
+const itemNames = D2RMM.readJson(itemNamesFilename);
 
 itemNames.forEach((item) => {
   const itemtype = item.Key;
@@ -41,27 +150,6 @@ itemNames.forEach((item) => {
       break;
     case "jew": // Jewel
       newName = `• Jewel •ÿcN`;
-      break;
-    case "gzv": // F Amethyst
-      newName = `ÿc7[ÿc;@ÿc7] ÿc0Flawless Amethyst`;
-      break;
-    case "gly": // F Topaz
-      newName = `ÿc7[ÿc9@ÿc7] ÿc0Flawless Topaz`;
-      break;
-    case "glb": // F Sapphire
-      newName = `ÿc7[ÿcN@ÿc7] ÿc0Flawless Sapphire`;
-      break;
-    case "glg": // F Emerald
-      newName = `ÿc7[ÿcQ@ÿc7] ÿc0Flawless Emerald`;
-      break;
-    case "glr": // F Ruby
-      newName = `ÿc7[ÿcU@ÿc7] ÿc0Flawless Ruby`;
-      break;
-    case "glw": // F Diamond
-      newName = `ÿc7[ÿcF@ÿc7] ÿc0Flawless Diamond`;
-      break;
-    case "skl": // F Skull
-      newName = `ÿc7[ÿcH@ÿc7] ÿc0Flawless Skull`;
       break;
   }
 
