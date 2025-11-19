@@ -586,6 +586,39 @@
               ]
             },
             {
+              "id": "normalPaladinShield",
+              "name": "Paladin Shield",
+              "type": "section",
+              "defaultExpanded": false,
+              "children": [
+                {
+                  "id": "bth_pa1",
+                  "name": "Targe",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_pa2",
+                  "name": "Rondache",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_pa3",
+                  "name": "Heraldic Shield",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_pa4",
+                  "name": "Aerin Shield",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_pa5",
+                  "name": "Crown Shield",
+                  "type": "checkbox"
+                }
+              ]
+            },
+            {
               "id": "normalPelt",
               "name": "Pelt",
               "type": "section",
@@ -1118,6 +1151,39 @@
               ]
             },
             {
+              "id": "exceptionalPaladinShield",
+              "name": "Paladin Shield",
+              "type": "section",
+              "defaultExpanded": false,
+              "children": [
+                {
+                  "id": "bth_pa6",
+                  "name": "Akaran Targe",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_pa7",
+                  "name": "Akaran Rondache",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_pa8",
+                  "name": "Protector Shield",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_pa9",
+                  "name": "Gilded Shield",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_paa",
+                  "name": "Royal Shield",
+                  "type": "checkbox"
+                }
+              ]
+            },
+            {
               "id": "exceptionalPelt",
               "name": "Pelt",
               "type": "section",
@@ -1645,6 +1711,39 @@
                 {
                   "id": "bth_obf",
                   "name": "Dimensional Shard",
+                  "type": "checkbox"
+                }
+              ]
+            },
+            {
+              "id": "elitePaladinShield",
+              "name": "Paladin Shield",
+              "type": "section",
+              "defaultExpanded": false,
+              "children": [
+                {
+                  "id": "bth_pab",
+                  "name": "Sacred Targe",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_pac",
+                  "name": "Sacred Rondache",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_pad",
+                  "name": "Kurast Shield",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_pae",
+                  "name": "Zakarum Shield",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_paf",
+                  "name": "Vortex Shield",
                   "type": "checkbox"
                 }
               ]
