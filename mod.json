@@ -1,9 +1,9 @@
 {
-  "name": "D2R Loot Filter",
-  "description": "Shortens scrolls, potions, gold. Highlights charms/gems/potions/runes",
+  "name": "Enigmator",
+  "description": "Item highlighter for Diablo II: Resurrected - Never miss a drop again!",
   "author": "Noobient",
-  "website": "https://noobient.com",
-  "version": "0.1",
+  "website": "https://noobient.com/enigmator/",
+  "version": "1.0",
   "config": [
     {
       "id": "illuminateRunes",
