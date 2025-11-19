@@ -41,7 +41,7 @@ function highlightGems(jsonFile) {
         gemPrefix = "O";
         break;
       default: // "Normal" gems don't have a prefix
-        gemPrefix = "*";
+        gemPrefix = "x";
     }
 
     switch(item.Key) {
