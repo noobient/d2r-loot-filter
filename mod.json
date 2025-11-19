@@ -781,6 +781,54 @@
               ]
             },
             {
+              "id": "normalMace",
+              "name": "Mace",
+              "type": "section",
+              "defaultExpanded": false,
+              "children": [
+                {
+                  "id": "bth_clb",
+                  "name": "Club",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_spc",
+                  "name": "Spiked Club",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_mac",
+                  "name": "Mace",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_mst",
+                  "name": "Morning Star",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_fla",
+                  "name": "Flail",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_whm",
+                  "name": "War Hammer",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_mau",
+                  "name": "Maul",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_gma",
+                  "name": "Great Maul",
+                  "type": "checkbox"
+                }
+              ]
+            },
+            {
               "id": "normalOrb",
               "name": "Orb",
               "type": "section",
@@ -1769,6 +1817,54 @@
               ]
             },
             {
+              "id": "exceptionalMace",
+              "name": "Mace",
+              "type": "section",
+              "defaultExpanded": false,
+              "children": [
+                {
+                  "id": "bth_9cl",
+                  "name": "Cudgel",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_9sp",
+                  "name": "Barbed Club",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_9ma",
+                  "name": "Flanged Mace",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_9mt",
+                  "name": "Jagged Star",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_9fl",
+                  "name": "Knout",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_9wh",
+                  "name": "Battle Hammer",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_9m9",
+                  "name": "War Club",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_9gm",
+                  "name": "Martel de Fer",
+                  "type": "checkbox"
+                }
+              ]
+            },
+            {
               "id": "exceptionalOrb",
               "name": "Orb",
               "type": "section",
@@ -2752,6 +2848,54 @@
                 {
                   "id": "bth_7qr",
                   "name": "Scissors Suwayyah",
+                  "type": "checkbox"
+                }
+              ]
+            },
+            {
+              "id": "eliteMace",
+              "name": "Mace",
+              "type": "section",
+              "defaultExpanded": false,
+              "children": [
+                {
+                  "id": "bth_7cl",
+                  "name": "Truncheon",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_7sp",
+                  "name": "Tyrant Club",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_7ma",
+                  "name": "Reinforced Mace",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_7mt",
+                  "name": "Devil Star",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_7fl",
+                  "name": "Scourge",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_7wh",
+                  "name": "Legendary Mallet",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_7m7",
+                  "name": "Ogre Maul",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_7gm",
+                  "name": "Thunder Maul",
                   "type": "checkbox"
                 }
               ]
