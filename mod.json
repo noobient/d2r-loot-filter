@@ -237,6 +237,39 @@
           "defaultExpanded": false,
           "children": [
             {
+              "id": "normalAmazonWeapon",
+              "name": "Amazon Weapon",
+              "type": "section",
+              "defaultExpanded": false,
+              "children": [
+                {
+                  "id": "bth_am1",
+                  "name": "Stag Bow",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_am2",
+                  "name": "Reflex Bow",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_am3",
+                  "name": "Maiden Spear",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_am4",
+                  "name": "Maiden Pike",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_am5",
+                  "name": "Maiden Javelin",
+                  "type": "checkbox"
+                }
+              ]
+            },
+            {
               "id": "normalArmor",
               "name": "Armor",
               "type": "section",
@@ -840,6 +873,39 @@
           "defaultExpanded": false,
           "children": [
             {
+              "id": "exceptionalAmazonWeapon",
+              "name": "Amazon Weapon",
+              "type": "section",
+              "defaultExpanded": false,
+              "children": [
+                {
+                  "id": "bth_am6",
+                  "name": "Ashwood Bow",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_am7",
+                  "name": "Ceremonial Bow",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_am8",
+                  "name": "Ceremonial Spear",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_am9",
+                  "name": "Ceremonial Pike",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_ama",
+                  "name": "Ceremonial Javelin",
+                  "type": "checkbox"
+                }
+              ]
+            },
+            {
               "id": "exceptionalArmor",
               "name": "Armor",
               "type": "section",
@@ -1437,6 +1503,39 @@
           "type": "section",
           "defaultExpanded": false,
           "children": [
+            {
+              "id": "eliteAmazonWeapon",
+              "name": "Amazon Weapon",
+              "type": "section",
+              "defaultExpanded": false,
+              "children": [
+                {
+                  "id": "bth_amb",
+                  "name": "Matriarchal Bow",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_amc",
+                  "name": "Grand Matron Bow",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_amd",
+                  "name": "Matriarchal Spear",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_ame",
+                  "name": "Matriarchal Pike",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_amf",
+                  "name": "Matriarchal Javelin",
+                  "type": "checkbox"
+                }
+              ]
+            },
             {
               "id": "eliteArmor",
               "name": "Armor",
