@@ -1,3367 +1,3367 @@
 {
-  "name": "Enigmator",
-  "description": "Item highlighter for Diablo II: Resurrected - Never miss a drop again!",
-  "author": "Noobient",
-  "website": "https://noobient.com/enigmator/",
-  "version": "1.0",
-  "config": [
-    {
-      "id": "illuminateRunes",
-      "name": "Illuminate Runes",
-      "description": "Illuminate runes when dropped.",
-      "type": "section",
-      "children": [
-        {
-          "id": "lowRunes",
-          "name": "Low Runes",
-          "type": "section",
-          "defaultExpanded": false,
-          "children": [
-            {
-              "id": "lbr_r01",
-              "name": "El",
-              "type": "checkbox"
-            },
-            {
-              "id": "lbr_r02",
-              "name": "Eld",
-              "type": "checkbox"
-            },
-            {
-              "id": "lbr_r03",
-              "name": "Tir",
-              "type": "checkbox"
-            },
-            {
-              "id": "lbr_r04",
-              "name": "Nef",
-              "type": "checkbox"
-            },
-            {
-              "id": "lbr_r05",
-              "name": "Eth",
-              "type": "checkbox"
-            },
-            {
-              "id": "lbr_r06",
-              "name": "Ith",
-              "type": "checkbox"
-            },
-            {
-              "id": "lbr_r07",
-              "name": "Tal",
-              "type": "checkbox"
-            },
-            {
-              "id": "lbr_r08",
-              "name": "Ral",
-              "type": "checkbox"
-            },
-            {
-              "id": "lbr_r09",
-              "name": "Ort",
-              "type": "checkbox"
-            },
-            {
-              "id": "lbr_r10",
-              "name": "Thul",
-              "type": "checkbox"
-            },
-            {
-              "id": "lbr_r11",
-              "name": "Amn",
-              "type": "checkbox"
-            },
-            {
-              "id": "lbr_r12",
-              "name": "Sol",
-              "type": "checkbox"
-            },
-            {
-              "id": "lbr_r13",
-              "name": "Shael",
-              "type": "checkbox"
-            },
-            {
-              "id": "lbr_r14",
-              "name": "Dol",
-              "type": "checkbox"
-            },
-            {
-              "id": "lbr_r15",
-              "name": "Hel",
-              "type": "checkbox"
-            },
-            {
-              "id": "lbr_r16",
-              "name": "Io",
-              "type": "checkbox"
-            },
-            {
-              "id": "lbr_r17",
-              "name": "Lum",
-              "type": "checkbox"
-            },
-            {
-              "id": "lbr_r18",
-              "name": "Ko",
-              "type": "checkbox"
-            },
-            {
-              "id": "lbr_r19",
-              "name": "Fal",
-              "type": "checkbox"
-            }
-          ]
-        },
-        {
-          "id": "mediumRunes",
-          "name": "Medium Runes",
-          "type": "section",
-          "defaultExpanded": false,
-          "children": [
-            {
-              "id": "lbr_r20",
-              "name": "Lem",
-              "type": "checkbox",
-              "defaultValue": true
-            },
-            {
-              "id": "lbr_r21",
-              "name": "Pul",
-              "type": "checkbox",
-              "defaultValue": true
-            },
-            {
-              "id": "lbr_r22",
-              "name": "Um",
-              "type": "checkbox",
-              "defaultValue": true
-            },
-            {
-              "id": "lbr_r23",
-              "name": "Mal",
-              "type": "checkbox",
-              "defaultValue": true
-            },
-            {
-              "id": "lbr_r24",
-              "name": "Ist",
-              "type": "checkbox",
-              "defaultValue": true
-            }
-          ]
-        },
-        {
-          "id": "mediumHighRunes",
-          "name": "Medium-High Runes",
-          "type": "section",
-          "defaultExpanded": false,
-          "children": [
-            {
-              "id": "lbr_r25",
-              "name": "Gul",
-              "type": "checkbox",
-              "defaultValue": true
-            },
-            {
-              "id": "lbr_r26",
-              "name": "Vex",
-              "type": "checkbox",
-              "defaultValue": true
-            },
-            {
-              "id": "lbr_r27",
-              "name": "Ohm",
-              "type": "checkbox",
-              "defaultValue": true
-            },
-            {
-              "id": "lbr_r28",
-              "name": "Lo",
-              "type": "checkbox",
-              "defaultValue": true
-            }
-          ]
-        },
-        {
-          "id": "highRunes",
-          "name": "High Runes",
-          "type": "section",
-          "defaultExpanded": false,
-          "children": [
-            {
-              "id": "lbr_r29",
-              "name": "Sur",
-              "type": "checkbox",
-              "defaultValue": true
-            },
-            {
-              "id": "lbr_r30",
-              "name": "Ber",
-              "type": "checkbox",
-              "defaultValue": true
-            },
-            {
-              "id": "lbr_r31",
-              "name": "Jah",
-              "type": "checkbox",
-              "defaultValue": true
-            },
-            {
-              "id": "lbr_r32",
-              "name": "Cham",
-              "type": "checkbox",
-              "defaultValue": true
-            },
-            {
-              "id": "lbr_r33",
-              "name": "Zod",
-              "type": "checkbox",
-              "defaultValue": true
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "highlightBases",
-      "name": "Highlight Bases",
-      "description": "Option to highlight desirable runeword / recipe bases with a colorful suffix. Due to technical limitations, this will also apply to magic, rare, and unique items.",
-      "type": "section",
-      "children": [
-        {
-          "id": "normal",
-          "name": "Normal",
-          "type": "section",
-          "defaultExpanded": false,
-          "children": [
-            {
-              "id": "normalAmazonWeapon",
-              "name": "Amazon Weapon",
-              "type": "section",
-              "defaultExpanded": false,
-              "children": [
-                {
-                  "id": "bth_am1",
-                  "name": "Stag Bow",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_am2",
-                  "name": "Reflex Bow",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_am3",
-                  "name": "Maiden Spear",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_am4",
-                  "name": "Maiden Pike",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_am5",
-                  "name": "Maiden Javelin",
-                  "type": "checkbox"
-                }
-              ]
-            },
-            {
-              "id": "normalArmor",
-              "name": "Armor",
-              "type": "section",
-              "defaultExpanded": false,
-              "children": [
-                {
-                  "id": "bth_qui",
-                  "name": "Quilted Armor",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_lea",
-                  "name": "Leather Armor",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_hla",
-                  "name": "Hard Leather Armor",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_stu",
-                  "name": "Studded Leather",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_rng",
-                  "name": "Ring Mail",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_scl",
-                  "name": "Scale Mail",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_brs",
-                  "name": "Breast Plate",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_chn",
-                  "name": "Chain Mail",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_spl",
-                  "name": "Splint Mail",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_ltp",
-                  "name": "Light Plate",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_fld",
-                  "name": "Field Plate",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_plt",
-                  "name": "Plate Mail",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_gth",
-                  "name": "Gothic Plate",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_ful",
-                  "name": "Full Plate Mail",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_aar",
-                  "name": "Ancient Armor",
-                  "type": "checkbox"
-                }
-              ]
-            },
-            {
-              "id": "normalAxe",
-              "name": "Axe",
-              "type": "section",
-              "defaultExpanded": false,
-              "children": [
-                {
-                  "id": "bth_hax",
-                  "name": "Hand Axe",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_axe",
-                  "name": "Axe",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_2ax",
-                  "name": "Double Axe",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_mpi",
-                  "name": "Military Pick",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_wax",
-                  "name": "War Axe",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_lax",
-                  "name": "Large Axe",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_bax",
-                  "name": "Broad Axe",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_btx",
-                  "name": "Battle Axe",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_gax",
-                  "name": "Great Axe",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_gix",
-                  "name": "Giant Axe",
-                  "type": "checkbox"
-                }
-              ]
-            },
-            {
-              "id": "normalBarbarianHelm",
-              "name": "Barbarian Helm",
-              "type": "section",
-              "defaultExpanded": false,
-              "children": [
-                {
-                  "id": "bth_",
-                  "name": "Jawbone Cap",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_ba2",
-                  "name": "Fanged Helm",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_ba3",
-                  "name": "Horned Helm",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_ba4",
-                  "name": "Assault Helmet",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_ba5",
-                  "name": "Avenger Guard",
-                  "type": "checkbox"
-                }
-              ]
-            },
-            {
-              "id": "normalBelt",
-              "name": "Belt",
-              "type": "section",
-              "defaultExpanded": false,
-              "children": [
-                {
-                  "id": "bth_lbl",
-                  "name": "Sash",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_vbl",
-                  "name": "Light Belt",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_mbl",
-                  "name": "Belt",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_tbl",
-                  "name": "Heavy Belt",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_hbl",
-                  "name": "Plated Belt",
-                  "type": "checkbox"
-                }
-              ]
-            },
-            {
-              "id": "normalBoot",
-              "name": "Boot",
-              "type": "section",
-              "defaultExpanded": false,
-              "children": [
-                {
-                  "id": "bth_lbt",
-                  "name": "Boots",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_vbt",
-                  "name": "Heavy Boots",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_mbt",
-                  "name": "Chain Boots",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_tbt",
-                  "name": "Light Plated Boots",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_hbt",
-                  "name": "Greaves",
-                  "type": "checkbox"
-                }
-              ]
-            },
-            {
-              "id": "normalBow",
-              "name": "Bow",
-              "type": "section",
-              "defaultExpanded": false,
-              "children": [
-                {
-                  "id": "bth_sbw",
-                  "name": "Short Bow",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_hbw",
-                  "name": "Hunter's Bow",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_lbw",
-                  "name": "Long Bow",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_cbw",
-                  "name": "Composite Bow",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_sbb",
-                  "name": "Short Battle Bow",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_lbb",
-                  "name": "Long Battle Bow",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_swb",
-                  "name": "Short War Bow",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_lwb",
-                  "name": "Long War Bow",
-                  "type": "checkbox"
-                }
-              ]
-            },
-            {
-              "id": "normalCrossbow",
-              "name": "Crossbow",
-              "type": "section",
-              "defaultExpanded": false,
-              "children": [
-                {
-                  "id": "bth_lxb",
-                  "name": "Light Crossbow",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_mxb",
-                  "name": "Crossbow",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_hxb",
-                  "name": "Heavy Crossbow",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_rxb",
-                  "name": "Repeating Crossbow",
-                  "type": "checkbox"
-                }
-              ]
-            },
-            {
-              "id": "normalDagger",
-              "name": "Dagger",
-              "type": "section",
-              "defaultExpanded": false,
-              "children": [
-                {
-                  "id": "bth_dgr",
-                  "name": "Dagger",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_dir",
-                  "name": "Dirk",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_kri",
-                  "name": "Kris",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_bld",
-                  "name": "Blade",
-                  "type": "checkbox"
-                }
-              ]
-            },
-            {
-              "id": "normalGlove",
-              "name": "Glove",
-              "type": "section",
-              "defaultExpanded": false,
-              "children": [
-                {
-                  "id": "bth_lgl",
-                  "name": "Leather Gloves",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_vgl",
-                  "name": "Heavy Gloves",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_mgl",
-                  "name": "Chain Gloves",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_tgl",
-                  "name": "Light Gauntlets",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_hgl",
-                  "name": "Gauntlets",
-                  "type": "checkbox"
-                }
-              ]
-            },
-            {
-              "id": "normalHelm",
-              "name": "Helm",
-              "type": "section",
-              "defaultExpanded": false,
-              "children": [
-                {
-                  "id": "bth_cap",
-                  "name": "Cap",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_skp",
-                  "name": "Skull Cap",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_hlm",
-                  "name": "Helm",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_fhl",
-                  "name": "Full Helm",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_ghm",
-                  "name": "Great Helm",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_msk",
-                  "name": "Mask",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_crn",
-                  "name": "Crown",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_bhm",
-                  "name": "Bone Helm",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_ci0",
-                  "name": "Circlet",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_ci1",
-                  "name": "Coronet",
-                  "type": "checkbox"
-                }
-              ]
-            },
-            {
-              "id": "normalJavelin",
-              "name": "Javelin",
-              "type": "section",
-              "defaultExpanded": false,
-              "children": [
-                {
-                  "id": "bth_jav",
-                  "name": "Javelin",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_pil",
-                  "name": "Pilum",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_ssp",
-                  "name": "Short Spear",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_glv",
-                  "name": "Glaive",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_tsp",
-                  "name": "Throwing Spear",
-                  "type": "checkbox"
-                }
-              ]
-            },
-            {
-              "id": "normalKatar",
-              "name": "Katar",
-              "type": "section",
-              "defaultExpanded": false,
-              "children": [
-                {
-                  "id": "bth_ktr",
-                  "name": "Katar",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_wrb",
-                  "name": "Wrist Blade",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_axf",
-                  "name": "Hatchet Hands",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_ces",
-                  "name": "Cestus",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_clw",
-                  "name": "Claws",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_btl",
-                  "name": "Blade Talons",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_skr",
-                  "name": "Scissors Katar",
-                  "type": "checkbox"
-                }
-              ]
-            },
-            {
-              "id": "normalMace",
-              "name": "Mace",
-              "type": "section",
-              "defaultExpanded": false,
-              "children": [
-                {
-                  "id": "bth_clb",
-                  "name": "Club",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_spc",
-                  "name": "Spiked Club",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_mac",
-                  "name": "Mace",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_mst",
-                  "name": "Morning Star",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_fla",
-                  "name": "Flail",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_whm",
-                  "name": "War Hammer",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_mau",
-                  "name": "Maul",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_gma",
-                  "name": "Great Maul",
-                  "type": "checkbox"
-                }
-              ]
-            },
-            {
-              "id": "normalOrb",
-              "name": "Orb",
-              "type": "section",
-              "defaultExpanded": false,
-              "children": [
-                {
-                  "id": "bth_ob1",
-                  "name": "Eagle Orb",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_ob2",
-                  "name": "Sacred Globe",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_ob3",
-                  "name": "Smoked Sphere",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_ob4",
-                  "name": "Clasped Orb",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_ob5",
-                  "name": "Jared's Stone",
-                  "type": "checkbox"
-                }
-              ]
-            },
-            {
-              "id": "normalPaladinShield",
-              "name": "Paladin Shield",
-              "type": "section",
-              "defaultExpanded": false,
-              "children": [
-                {
-                  "id": "bth_pa1",
-                  "name": "Targe",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_pa2",
-                  "name": "Rondache",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_pa3",
-                  "name": "Heraldic Shield",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_pa4",
-                  "name": "Aerin Shield",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_pa5",
-                  "name": "Crown Shield",
-                  "type": "checkbox"
-                }
-              ]
-            },
-            {
-              "id": "normalPelt",
-              "name": "Pelt",
-              "type": "section",
-              "defaultExpanded": false,
-              "children": [
-                {
-                  "id": "bth_dr1",
-                  "name": "Wolf Head",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_dr2",
-                  "name": "Hawk Helm",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_dr3",
-                  "name": "Antlers",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_dr4",
-                  "name": "Falcon Mask",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_dr5",
-                  "name": "Spirit Mask",
-                  "type": "checkbox"
-                }
-              ]
-            },
-            {
-              "id": "normalPolearm",
-              "name": "Polearm",
-              "type": "section",
-              "defaultExpanded": false,
-              "children": [
-                {
-                  "id": "bth_bar",
-                  "name": "Bardiche",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_vou",
-                  "name": "Voulge",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_scy",
-                  "name": "Scythe",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_pax",
-                  "name": "Poleaxe",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_hal",
-                  "name": "Halberd",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_wsc",
-                  "name": "War Scythe",
-                  "type": "checkbox"
-                }
-              ]
-            },
-            {
-              "id": "normalScepter",
-              "name": "Scepter",
-              "type": "section",
-              "defaultExpanded": false,
-              "children": [
-                {
-                  "id": "bth_scp",
-                  "name": "Scepter",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_gsc",
-                  "name": "Grand Scepter",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_wsp",
-                  "name": "War Scepter",
-                  "type": "checkbox"
-                }
-              ]
-            },
-            {
-              "id": "normalShield",
-              "name": "Shield",
-              "type": "section",
-              "defaultExpanded": false,
-              "children": [
-                {
-                  "id": "bth_buc",
-                  "name": "Buckler",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_sml",
-                  "name": "Small Shield",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_lrg",
-                  "name": "Large Shield",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_kit",
-                  "name": "Kite Shield",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_spk",
-                  "name": "Spiked Shield",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_tow",
-                  "name": "Tower Shield",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_bsh",
-                  "name": "Bone Shield",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_gts",
-                  "name": "Gothic Shield",
-                  "type": "checkbox"
-                }
-              ]
-            },
-            {
-              "id": "normalShrunkenHead",
-              "name": "Shrunken Head",
-              "type": "section",
-              "defaultExpanded": false,
-              "children": [
-                {
-                  "id": "bth_ne1",
-                  "name": "Preserved Head",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_ne2",
-                  "name": "Zombie Head",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_ne3",
-                  "name": "Unraveller Head",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_ne4",
-                  "name": "Gargoyle Head",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_ne5",
-                  "name": "Demon Head",
-                  "type": "checkbox"
-                }
-              ]
-            },
-            {
-              "id": "normalSpear",
-              "name": "Spear",
-              "type": "section",
-              "defaultExpanded": false,
-              "children": [
-                {
-                  "id": "bth_spr",
-                  "name": "Spear",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_tri",
-                  "name": "Trident",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_brn",
-                  "name": "Brandistock",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_spt",
-                  "name": "Spetum",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_pik",
-                  "name": "Pike",
-                  "type": "checkbox"
-                }
-              ]
-            },
-            {
-              "id": "normalStaff",
-              "name": "Staff",
-              "type": "section",
-              "defaultExpanded": false,
-              "children": [
-                {
-                  "id": "bth_sst",
-                  "name": "Short Staff",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_lst",
-                  "name": "Long Staff",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_cst",
-                  "name": "Gnarled Staff",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_bst",
-                  "name": "Battle Staff",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_wst",
-                  "name": "War Staff",
-                  "type": "checkbox"
-                }
-              ]
-            },
-            {
-              "id": "normalSword",
-              "name": "Sword",
-              "type": "section",
-              "defaultExpanded": false,
-              "children": [
-                {
-                  "id": "bth_ssd",
-                  "name": "Short Sword",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_scm",
-                  "name": "Scimitar",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_sbr",
-                  "name": "Sabre",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_flc",
-                  "name": "Falchion",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_crs",
-                  "name": "Crystal Sword",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_bsd",
-                  "name": "Broad Sword",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_lsd",
-                  "name": "Long Sword",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_wsd",
-                  "name": "War Sword",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_2hs",
-                  "name": "Two-handed Sword",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_clm",
-                  "name": "Claymore",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_gis",
-                  "name": "Giant Sword",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_bsw",
-                  "name": "Bastard Sword",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_flb",
-                  "name": "Flamberge",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_gsd",
-                  "name": "Great Sword",
-                  "type": "checkbox"
-                }
-              ]
-            },
-            {
-              "id": "normalThrowing",
-              "name": "Throwing",
-              "type": "section",
-              "defaultExpanded": false,
-              "children": [
-                {
-                  "id": "bth_tkf",
-                  "name": "Throwing Knife",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_bkf",
-                  "name": "Balanced Knife",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_tax",
-                  "name": "Throwing Axe",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_bal",
-                  "name": "Balanced Axe",
-                  "type": "checkbox"
-                }
-              ]
-            },
-            {
-              "id": "normalWand",
-              "name": "Wand",
-              "type": "section",
-              "defaultExpanded": false,
-              "children": [
-                {
-                  "id": "bth_wnd",
-                  "name": "Wand",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_ywn",
-                  "name": "Yew Wand",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_bwn",
-                  "name": "Bone Wand",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_gwn",
-                  "name": "Grim Wand",
-                  "type": "checkbox"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "id": "exceptional",
-          "name": "Exceptional",
-          "type": "section",
-          "defaultExpanded": false,
-          "children": [
-            {
-              "id": "exceptionalAmazonWeapon",
-              "name": "Amazon Weapon",
-              "type": "section",
-              "defaultExpanded": false,
-              "children": [
-                {
-                  "id": "bth_am6",
-                  "name": "Ashwood Bow",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_am7",
-                  "name": "Ceremonial Bow",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_am8",
-                  "name": "Ceremonial Spear",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_am9",
-                  "name": "Ceremonial Pike",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_ama",
-                  "name": "Ceremonial Javelin",
-                  "type": "checkbox"
-                }
-              ]
-            },
-            {
-              "id": "exceptionalArmor",
-              "name": "Armor",
-              "type": "section",
-              "defaultExpanded": false,
-              "children": [
-                {
-                  "id": "bth_xui",
-                  "name": "Ghost Armor",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_xea",
-                  "name": "Serpentskin Armor",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_xla",
-                  "name": "Demonhide Armor",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_xtu",
-                  "name": "Trellised Armor",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_xng",
-                  "name": "Linked Mail",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_xcl",
-                  "name": "Tigulated Mail",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_xrs",
-                  "name": "Cuirass",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_xhn",
-                  "name": "Mesh Armor",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_xpl",
-                  "name": "Russet Armor",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_xtp",
-                  "name": "Mage Plate",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_xld",
-                  "name": "Sharktooth Armor",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_xlt",
-                  "name": "Templar Coat",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_xth",
-                  "name": "Embossed Plate",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_xul",
-                  "name": "Chaos Armor",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_xar",
-                  "name": "Ornate Plate",
-                  "type": "checkbox"
-                }
-              ]
-            },
-            {
-              "id": "exceptionalAxe",
-              "name": "Axe",
-              "type": "section",
-              "defaultExpanded": false,
-              "children": [
-                {
-                  "id": "bth_9ha",
-                  "name": "Hatchet",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_9ax",
-                  "name": "Cleaver",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_92a",
-                  "name": "Twin Axe",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_9mp",
-                  "name": "Crowbill",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_9wa",
-                  "name": "Naga",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_9la",
-                  "name": "Military Axe",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_9ba",
-                  "name": "Bearded Axe",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_9bt",
-                  "name": "Tabar",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_9ga",
-                  "name": "Gothic Axe",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_9gi",
-                  "name": "Ancient Axe",
-                  "type": "checkbox"
-                }
-              ]
-            },
-            {
-              "id": "exceptionalBarbarianHelm",
-              "name": "Barbarian Helm",
-              "type": "section",
-              "defaultExpanded": false,
-              "children": [
-                {
-                  "id": "bth_ba6",
-                  "name": "Jawbone Visor",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_ba7",
-                  "name": "Lion Helm",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_ba8",
-                  "name": "Rage Mask",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_ba9",
-                  "name": "Savage Helmet",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_baa",
-                  "name": "Slayer Guard",
-                  "type": "checkbox"
-                }
-              ]
-            },
-            {
-              "id": "exceptionalBelt",
-              "name": "Belt",
-              "type": "section",
-              "defaultExpanded": false,
-              "children": [
-                {
-                  "id": "bth_zlb",
-                  "name": "Demonhide Sash",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_zvb",
-                  "name": "Sharkskin Belt",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_zmb",
-                  "name": "Mesh Belt",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_ztb",
-                  "name": "Battle Belt",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_zhb",
-                  "name": "War Belt",
-                  "type": "checkbox"
-                }
-              ]
-            },
-            {
-              "id": "exceptionalBoot",
-              "name": "Boot",
-              "type": "section",
-              "defaultExpanded": false,
-              "children": [
-                {
-                  "id": "bth_xlb",
-                  "name": "Demonhide Boots",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_xvb",
-                  "name": "Sharkskin Boots",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_xmb",
-                  "name": "Mesh Boots",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_xtb",
-                  "name": "Battle Boots",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_xhb",
-                  "name": "War Boots",
-                  "type": "checkbox"
-                }
-              ]
-            },
-            {
-              "id": "exceptionalBow",
-              "name": "Bow",
-              "type": "section",
-              "defaultExpanded": false,
-              "children": [
-                {
-                  "id": "bth_8sb",
-                  "name": "Edge Bow",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_8hb",
-                  "name": "Razor Bow",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_8lb",
-                  "name": "Cedar Bow",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_8cb",
-                  "name": "Double Bow",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_8s8",
-                  "name": "Short Siege Bow",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_8l8",
-                  "name": "Large Siege Bow",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_8sw",
-                  "name": "Rune Bow",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_8lw",
-                  "name": "Gothic Bow",
-                  "type": "checkbox"
-                }
-              ]
-            },
-            {
-              "id": "exceptionalCrossbow",
-              "name": "Crossbow",
-              "type": "section",
-              "defaultExpanded": false,
-              "children": [
-                {
-                  "id": "bth_8lx",
-                  "name": "Arbalest",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_8mx",
-                  "name": "Siege Crossbow",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_8hx",
-                  "name": "Ballista",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_8rx",
-                  "name": "Chu-Ko-Nu",
-                  "type": "checkbox"
-                }
-              ]
-            },
-            {
-              "id": "exceptionalDagger",
-              "name": "Dagger",
-              "type": "section",
-              "defaultExpanded": false,
-              "children": [
-                {
-                  "id": "bth_9dg",
-                  "name": "Poignard",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_9di",
-                  "name": "Rondel",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_9kr",
-                  "name": "Cinquedeas",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_9bl",
-                  "name": "Stiletto",
-                  "type": "checkbox"
-                }
-              ]
-            },
-            {
-              "id": "exceptionalGlove",
-              "name": "Glove",
-              "type": "section",
-              "defaultExpanded": false,
-              "children": [
-                {
-                  "id": "bth_xlg",
-                  "name": "Demonhide Gloves",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_xvg",
-                  "name": "Sharkskin Gloves",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_xmg",
-                  "name": "Heavy Bracers",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_xtg",
-                  "name": "Battle Gauntlets",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_xhg",
-                  "name": "War Gauntlets",
-                  "type": "checkbox"
-                }
-              ]
-            },
-            {
-              "id": "exceptionalHelm",
-              "name": "Helm",
-              "type": "section",
-              "defaultExpanded": false,
-              "children": [
-                {
-                  "id": "bth_xap",
-                  "name": "War Hat",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_xkp",
-                  "name": "Sallet",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_xlm",
-                  "name": "Casque",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_xhl",
-                  "name": "Basinet",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_xhm",
-                  "name": "Winged Helm",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_xsk",
-                  "name": "Death Mask",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_xrn",
-                  "name": "Grand Crown",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_xh9",
-                  "name": "Grim Helm",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_ci2",
-                  "name": "Tiara",
-                  "type": "checkbox"
-                }
-              ]
-            },
-            {
-              "id": "exceptionalJavelin",
-              "name": "Javelin",
-              "type": "section",
-              "defaultExpanded": false,
-              "children": [
-                {
-                  "id": "bth_9ja",
-                  "name": "War Javelin",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_9pi",
-                  "name": "Great Pilum",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_9s9",
-                  "name": "Simbilan",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_9gl",
-                  "name": "Spiculum",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_9ts",
-                  "name": "Harpoon",
-                  "type": "checkbox"
-                }
-              ]
-            },
-            {
-              "id": "exceptionalKatar",
-              "name": "Katar",
-              "type": "section",
-              "defaultExpanded": false,
-              "children": [
-                {
-                  "id": "bth_9ar",
-                  "name": "Quhab",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_9wb",
-                  "name": "Wrist Spike",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_9xf",
-                  "name": "Fascia",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_9cs",
-                  "name": "Hand Scythe",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_9lw",
-                  "name": "Greater Claws",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_9tw",
-                  "name": "Greater Talons",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_9qr",
-                  "name": "Scissors Quhab",
-                  "type": "checkbox"
-                }
-              ]
-            },
-            {
-              "id": "exceptionalMace",
-              "name": "Mace",
-              "type": "section",
-              "defaultExpanded": false,
-              "children": [
-                {
-                  "id": "bth_9cl",
-                  "name": "Cudgel",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_9sp",
-                  "name": "Barbed Club",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_9ma",
-                  "name": "Flanged Mace",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_9mt",
-                  "name": "Jagged Star",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_9fl",
-                  "name": "Knout",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_9wh",
-                  "name": "Battle Hammer",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_9m9",
-                  "name": "War Club",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_9gm",
-                  "name": "Martel de Fer",
-                  "type": "checkbox"
-                }
-              ]
-            },
-            {
-              "id": "exceptionalOrb",
-              "name": "Orb",
-              "type": "section",
-              "defaultExpanded": false,
-              "children": [
-                {
-                  "id": "bth_ob6",
-                  "name": "Glowing Orb",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_ob7",
-                  "name": "Crystalline Globe",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_ob8",
-                  "name": "Cloudy Sphere",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_ob9",
-                  "name": "Sparkling Ball",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_oba",
-                  "name": "Swirling Crystal",
-                  "type": "checkbox"
-                }
-              ]
-            },
-            {
-              "id": "exceptionalPaladinShield",
-              "name": "Paladin Shield",
-              "type": "section",
-              "defaultExpanded": false,
-              "children": [
-                {
-                  "id": "bth_pa6",
-                  "name": "Akaran Targe",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_pa7",
-                  "name": "Akaran Rondache",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_pa8",
-                  "name": "Protector Shield",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_pa9",
-                  "name": "Gilded Shield",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_paa",
-                  "name": "Royal Shield",
-                  "type": "checkbox"
-                }
-              ]
-            },
-            {
-              "id": "exceptionalPelt",
-              "name": "Pelt",
-              "type": "section",
-              "defaultExpanded": false,
-              "children": [
-                {
-                  "id": "bth_dr6",
-                  "name": "Alpha Helm",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_dr7",
-                  "name": "Griffon Headdress",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_dr8",
-                  "name": "Hunter's Guise",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_dr9",
-                  "name": "Sacred Feathers",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_dra",
-                  "name": "Totemic Mask",
-                  "type": "checkbox"
-                }
-              ]
-            },
-            {
-              "id": "exceptionalPolearm",
-              "name": "Polearm",
-              "type": "section",
-              "defaultExpanded": false,
-              "children": [
-                {
-                  "id": "bth_9b7",
-                  "name": "Lochaber Axe",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_9vo",
-                  "name": "Bill",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_9s8",
-                  "name": "Battle Scythe",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_9pa",
-                  "name": "Partizan",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_9h9",
-                  "name": "Bec-De-Corbin",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_9wc",
-                  "name": "Grim Scythe",
-                  "type": "checkbox"
-                }
-              ]
-            },
-            {
-              "id": "exceptionalScepter",
-              "name": "Scepter",
-              "type": "section",
-              "defaultExpanded": false,
-              "children": [
-                {
-                  "id": "bth_9sc",
-                  "name": "Rune Scepter",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_9qs",
-                  "name": "Holy Water Sprinkler",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_9ws",
-                  "name": "Divine Scepter",
-                  "type": "checkbox"
-                }
-              ]
-            },
-            {
-              "id": "exceptionalShield",
-              "name": "Shield",
-              "type": "section",
-              "defaultExpanded": false,
-              "children": [
-                {
-                  "id": "bth_xuc",
-                  "name": "Defender",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_xml",
-                  "name": "Round Shield",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_xrg",
-                  "name": "Scutum",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_xpk",
-                  "name": "Barbed Shield",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_xit",
-                  "name": "Dragon Shield",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_xsh",
-                  "name": "Grim Shield",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_xow",
-                  "name": "Pavise",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_xts",
-                  "name": "Ancient Shield",
-                  "type": "checkbox"
-                }
-              ]
-            },
-            {
-              "id": "exceptionalShrunkenHead",
-              "name": "Shrunken Head",
-              "type": "section",
-              "defaultExpanded": false,
-              "children": [
-                {
-                  "id": "bth_ne6",
-                  "name": "Mummified Trophy",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_ne7",
-                  "name": "Fetish Trophy",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_ne8",
-                  "name": "Sexton Trophy",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_ne9",
-                  "name": "Cantor Trophy",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_nea",
-                  "name": "Hierophant Trophy",
-                  "type": "checkbox"
-                }
-              ]
-            },
-            {
-              "id": "exceptionalSpear",
-              "name": "Spear",
-              "type": "section",
-              "defaultExpanded": false,
-              "children": [
-                {
-                  "id": "bth_9sr",
-                  "name": "War Spear",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_9tr",
-                  "name": "Fuscina",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_9br",
-                  "name": "War Fork",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_9st",
-                  "name": "Yari",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_9p9",
-                  "name": "Lance",
-                  "type": "checkbox"
-                }
-              ]
-            },
-            {
-              "id": "exceptionalStaff",
-              "name": "Staff",
-              "type": "section",
-              "defaultExpanded": false,
-              "children": [
-                {
-                  "id": "bth_8ss",
-                  "name": "Jo Staff",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_8ls",
-                  "name": "Quarterstaff",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_8cs",
-                  "name": "Cedar Staff",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_8bs",
-                  "name": "Gothic Staff",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_8ws",
-                  "name": "Rune Staff",
-                  "type": "checkbox"
-                }
-              ]
-            },
-            {
-              "id": "exceptionalSword",
-              "name": "Sword",
-              "type": "section",
-              "defaultExpanded": false,
-              "children": [
-                {
-                  "id": "bth_9ss",
-                  "name": "Gladius",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_9sm",
-                  "name": "Cutlass",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_9sb",
-                  "name": "Shamshir",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_9fc",
-                  "name": "Tulwar",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_9cr",
-                  "name": "Dimensional Blade",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_9bs",
-                  "name": "Battle Sword",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_9ls",
-                  "name": "Rune Sword",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_9wd",
-                  "name": "Ancient Sword",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_92h",
-                  "name": "Espandon",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_9cm",
-                  "name": "Dacian Falx",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_9gs",
-                  "name": "Tusk Sword",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_9b9",
-                  "name": "Gothic Sword",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_9fb",
-                  "name": "Zweihander",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_9gd",
-                  "name": "Executioner Sword",
-                  "type": "checkbox"
-                }
-              ]
-            },
-            {
-              "id": "exceptionalThrowing",
-              "name": "Throwing",
-              "type": "section",
-              "defaultExpanded": false,
-              "children": [
-                {
-                  "id": "bth_9tk",
-                  "name": "Battle Dart",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_9bk",
-                  "name": "War Dart",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_9ta",
-                  "name": "Francisca",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_9b8",
-                  "name": "Hurlbat",
-                  "type": "checkbox"
-                }
-              ]
-            },
-            {
-              "id": "exceptionalWand",
-              "name": "Wand",
-              "type": "section",
-              "defaultExpanded": false,
-              "children": [
-                {
-                  "id": "bth_9wn",
-                  "name": "Burnt Wand",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_9yw",
-                  "name": "Petrified Wand",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_9bw",
-                  "name": "Tomb Wand",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_9gw",
-                  "name": "Grave Wand",
-                  "type": "checkbox"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "id": "elite",
-          "name": "Elite",
-          "type": "section",
-          "defaultExpanded": false,
-          "children": [
-            {
-              "id": "eliteAmazonWeapon",
-              "name": "Amazon Weapon",
-              "type": "section",
-              "defaultExpanded": false,
-              "children": [
-                {
-                  "id": "bth_amb",
-                  "name": "Matriarchal Bow",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_amc",
-                  "name": "Grand Matron Bow",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_amd",
-                  "name": "Matriarchal Spear",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_ame",
-                  "name": "Matriarchal Pike",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_amf",
-                  "name": "Matriarchal Javelin",
-                  "type": "checkbox"
-                }
-              ]
-            },
-            {
-              "id": "eliteArmor",
-              "name": "Armor",
-              "type": "section",
-              "defaultExpanded": false,
-              "children": [
-                {
-                  "id": "bth_uui",
-                  "name": "Dusk Shroud",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_uea",
-                  "name": "Wyrmhide",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_ula",
-                  "name": "Scarab Husk",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_utu",
-                  "name": "Wire Fleece",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_ung",
-                  "name": "Diamond Mail",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_ucl",
-                  "name": "Loricated Mail",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_urs",
-                  "name": "Great Hauberk",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_umb",
-                  "name": "Boneweave",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_upl",
-                  "name": "Balrog Skin",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_utp",
-                  "name": "Archon Plate",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_uld",
-                  "name": "Kraken Shell",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_ult",
-                  "name": "Hellforge Plate",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_uth",
-                  "name": "Lacquered Plate",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_uul",
-                  "name": "Shadow Plate",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_uar",
-                  "name": "Sacred Armor",
-                  "type": "checkbox"
-                }
-              ]
-            },
-            {
-              "id": "eliteAxe",
-              "name": "Axe",
-              "type": "section",
-              "defaultExpanded": false,
-              "children": [
-                {
-                  "id": "bth_7ha",
-                  "name": "Tomahawk",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_7ax",
-                  "name": "Small Crescent",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_72a",
-                  "name": "Ettin Axe",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_7mp",
-                  "name": "War Spike",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_7wa",
-                  "name": "Berserker Axe",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_7la",
-                  "name": "Feral Axe",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_7ba",
-                  "name": "Silver-Edged Axe",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_7bt",
-                  "name": "Decapitator",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_7ga",
-                  "name": "Champion Axe",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_7gi",
-                  "name": "Glorious Axe",
-                  "type": "checkbox"
-                }
-              ]
-            },
-            {
-              "id": "eliteBarbarianHelm",
-              "name": "Barbarian Helm",
-              "type": "section",
-              "defaultExpanded": false,
-              "children": [
-                {
-                  "id": "bth_bab",
-                  "name": "Carnage Helm",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_bac",
-                  "name": "Fury Visor",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_bad",
-                  "name": "Destroyer Helm",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_bae",
-                  "name": "Conqueror Crown",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_baf",
-                  "name": "Guardian Crown",
-                  "type": "checkbox"
-                }
-              ]
-            },
-            {
-              "id": "eliteBelt",
-              "name": "Belt",
-              "type": "section",
-              "defaultExpanded": false,
-              "children": [
-                {
-                  "id": "bth_ulc",
-                  "name": "Spiderweb Sash",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_uvc",
-                  "name": "Vampirefang Belt",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_umc",
-                  "name": "Mithril Coil",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_utc",
-                  "name": "Troll Belt",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_uhc",
-                  "name": "Colossus Girdle",
-                  "type": "checkbox"
-                }
-              ]
-            },
-            {
-              "id": "eliteBoot",
-              "name": "Boot",
-              "type": "section",
-              "defaultExpanded": false,
-              "children": [
-                {
-                  "id": "bth_ulb",
-                  "name": "Wyrmhide Boots",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_uvb",
-                  "name": "Scarabshell Boots",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_umb",
-                  "name": "Boneweave Boots",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_utb",
-                  "name": "Mirrored Boots",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_uhb",
-                  "name": "Myrmidon Greaves",
-                  "type": "checkbox"
-                }
-              ]
-            },
-            {
-              "id": "eliteBow",
-              "name": "Bow",
-              "type": "section",
-              "defaultExpanded": false,
-              "children": [
-                {
-                  "id": "bth_6sb",
-                  "name": "Spider Bow",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_6hb",
-                  "name": "Blade Bow",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_6lb",
-                  "name": "Shadow Bow",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_6cb",
-                  "name": "Great Bow",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_6s7",
-                  "name": "Diamond Bow",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_6l7",
-                  "name": "Crusader Bow",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_6sw",
-                  "name": "Ward Bow",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_6lw",
-                  "name": "Hydra Bow",
-                  "type": "checkbox"
-                }
-              ]
-            },
-            {
-              "id": "eliteCrossbow",
-              "name": "Crossbow",
-              "type": "section",
-              "defaultExpanded": false,
-              "children": [
-                {
-                  "id": "bth_6lx",
-                  "name": "Pellet Bow",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_6mx",
-                  "name": "Gorgon Crossbow",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_6hx",
-                  "name": "Colossus Crossbow",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_6rx",
-                  "name": "Demon Crossbow",
-                  "type": "checkbox"
-                }
-              ]
-            },
-            {
-              "id": "eliteDagger",
-              "name": "Dagger",
-              "type": "section",
-              "defaultExpanded": false,
-              "children": [
-                {
-                  "id": "bth_7dg",
-                  "name": "Bone Knife",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_7di",
-                  "name": "Mithril Point",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_7kr",
-                  "name": "Fanged Knife",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_7bl",
-                  "name": "Legend Spike",
-                  "type": "checkbox"
-                }
-              ]
-            },
-            {
-              "id": "eliteGlove",
-              "name": "Glove",
-              "type": "section",
-              "defaultExpanded": false,
-              "children": [
-                {
-                  "id": "bth_ulg",
-                  "name": "Bramble Mitts",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_uvg",
-                  "name": "Vampirebone Gloves",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_umg",
-                  "name": "Vambraces",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_utg",
-                  "name": "Crusader Gauntlets",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_uhg",
-                  "name": "Ogre Gauntlets",
-                  "type": "checkbox"
-                }
-              ]
-            },
-            {
-              "id": "eliteHelm",
-              "name": "Helm",
-              "type": "section",
-              "defaultExpanded": false,
-              "children": [
-                {
-                  "id": "bth_uap",
-                  "name": "Shako",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_ukp",
-                  "name": "Hydraskull",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_ulm",
-                  "name": "Armet",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_uhl",
-                  "name": "Giant Conch",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_uhm",
-                  "name": "Spired Helm",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_usk",
-                  "name": "Demonhead",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_urn",
-                  "name": "Corona",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_uh9",
-                  "name": "Bone Visage",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_ci3",
-                  "name": "Diadem",
-                  "type": "checkbox"
-                }
-              ]
-            },
-            {
-              "id": "eliteJavelin",
-              "name": "Javelin",
-              "type": "section",
-              "defaultExpanded": false,
-              "children": [
-                {
-                  "id": "bth_7ja",
-                  "name": "Hyperion Javelin",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_7pi",
-                  "name": "Stygian Pilum",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_7s7",
-                  "name": "Balrog Spear",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_7gl",
-                  "name": "Ghost Glaive",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_7ts",
-                  "name": "Winged Harpoon",
-                  "type": "checkbox"
-                }
-              ]
-            },
-            {
-              "id": "eliteKatar",
-              "name": "Katar",
-              "type": "section",
-              "defaultExpanded": false,
-              "children": [
-                {
-                  "id": "bth_7ar",
-                  "name": "Suwayyah",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_7wb",
-                  "name": "Wrist Sword",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_7xf",
-                  "name": "War Fist",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_7cs",
-                  "name": "Battle Cestus",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_7lw",
-                  "name": "Feral Claws",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_7tw",
-                  "name": "Runic Talons",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_7qr",
-                  "name": "Scissors Suwayyah",
-                  "type": "checkbox"
-                }
-              ]
-            },
-            {
-              "id": "eliteMace",
-              "name": "Mace",
-              "type": "section",
-              "defaultExpanded": false,
-              "children": [
-                {
-                  "id": "bth_7cl",
-                  "name": "Truncheon",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_7sp",
-                  "name": "Tyrant Club",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_7ma",
-                  "name": "Reinforced Mace",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_7mt",
-                  "name": "Devil Star",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_7fl",
-                  "name": "Scourge",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_7wh",
-                  "name": "Legendary Mallet",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_7m7",
-                  "name": "Ogre Maul",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_7gm",
-                  "name": "Thunder Maul",
-                  "type": "checkbox"
-                }
-              ]
-            },
-            {
-              "id": "eliteOrb",
-              "name": "Orb",
-              "type": "section",
-              "defaultExpanded": false,
-              "children": [
-                {
-                  "id": "bth_obb",
-                  "name": "Heavenly Stone",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_obc",
-                  "name": "Eldritch Orb",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_obd",
-                  "name": "Demon Heart",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_obe",
-                  "name": "Vortex Orb",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_obf",
-                  "name": "Dimensional Shard",
-                  "type": "checkbox"
-                }
-              ]
-            },
-            {
-              "id": "elitePaladinShield",
-              "name": "Paladin Shield",
-              "type": "section",
-              "defaultExpanded": false,
-              "children": [
-                {
-                  "id": "bth_pab",
-                  "name": "Sacred Targe",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_pac",
-                  "name": "Sacred Rondache",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_pad",
-                  "name": "Kurast Shield",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_pae",
-                  "name": "Zakarum Shield",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_paf",
-                  "name": "Vortex Shield",
-                  "type": "checkbox"
-                }
-              ]
-            },
-            {
-              "id": "elitePelt",
-              "name": "Pelt",
-              "type": "section",
-              "defaultExpanded": false,
-              "children": [
-                {
-                  "id": "bth_drb",
-                  "name": "Blood Spirit",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_drc",
-                  "name": "Sun Spirit",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_drd",
-                  "name": "Earth Spirit",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_dre",
-                  "name": "Sky Spirit",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_drf",
-                  "name": "Dream Spirit",
-                  "type": "checkbox"
-                }
-              ]
-            },
-            {
-              "id": "elitePolearm",
-              "name": "Polearm",
-              "type": "section",
-              "defaultExpanded": false,
-              "children": [
-                {
-                  "id": "bth_7o7",
-                  "name": "Ogre Axe",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_7vo",
-                  "name": "Colossus Voulge",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_7s8",
-                  "name": "Thresher",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_7pa",
-                  "name": "Cryptic Axe",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_7h7",
-                  "name": "Great Poleaxe",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_7wc",
-                  "name": "Giant Thresher",
-                  "type": "checkbox"
-                }
-              ]
-            },
-            {
-              "id": "eliteScepter",
-              "name": "Scepter",
-              "type": "section",
-              "defaultExpanded": false,
-              "children": [
-                {
-                  "id": "bth_7sc",
-                  "name": "Mighty Scepter",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_7qs",
-                  "name": "Seraph Rod",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_7ws",
-                  "name": "Caduceus",
-                  "type": "checkbox"
-                }
-              ]
-            },
-            {
-              "id": "eliteShield",
-              "name": "Shield",
-              "type": "section",
-              "defaultExpanded": false,
-              "children": [
-                {
-                  "id": "bth_uuc",
-                  "name": "Heater",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_uml",
-                  "name": "Luna",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_urg",
-                  "name": "Hyperion",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_uit",
-                  "name": "Monarch",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_upk",
-                  "name": "Blade Barrier",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_uow",
-                  "name": "Aegis",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_ush",
-                  "name": "Troll Nest",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_uts",
-                  "name": "Ward",
-                  "type": "checkbox"
-                }
-              ]
-            },
-            {
-              "id": "eliteShrunkenHead",
-              "name": "Shrunken Head",
-              "type": "section",
-              "defaultExpanded": false,
-              "children": [
-                {
-                  "id": "bth_neb",
-                  "name": "Minion Skull",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_nec",
-                  "name": "Hellspawn Skull",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_ned",
-                  "name": "Overseer Skull",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_nee",
-                  "name": "Succubus Skull",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_nef",
-                  "name": "Bloodlord Skull",
-                  "type": "checkbox"
-                }
-              ]
-            },
-            {
-              "id": "eliteSpear",
-              "name": "Spear",
-              "type": "section",
-              "defaultExpanded": false,
-              "children": [
-                {
-                  "id": "bth_7sr",
-                  "name": "Hyperion Spear",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_7tr",
-                  "name": "Stygian Pike",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_7br",
-                  "name": "Mancatcher",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_7st",
-                  "name": "Ghost Spear",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_7p7",
-                  "name": "War Pike",
-                  "type": "checkbox"
-                }
-              ]
-            },
-            {
-              "id": "eliteStaff",
-              "name": "Staff",
-              "type": "section",
-              "defaultExpanded": false,
-              "children": [
-                {
-                  "id": "bth_6ss",
-                  "name": "Walking Stick",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_6ls",
-                  "name": "Stalagmite",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_6cs",
-                  "name": "Elder Staff",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_6bs",
-                  "name": "Shillelagh",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_6ws",
-                  "name": "Archon Staff",
-                  "type": "checkbox"
-                }
-              ]
-            },
-            {
-              "id": "eliteSword",
-              "name": "Sword",
-              "type": "section",
-              "defaultExpanded": false,
-              "children": [
-                {
-                  "id": "bth_7ss",
-                  "name": "Falcata",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_7sm",
-                  "name": "Ataghan",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_7sb",
-                  "name": "Elegant Blade",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_7fc",
-                  "name": "Hydra Edge",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_7cr",
-                  "name": "Phase Blade",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_7bs",
-                  "name": "Conquest Sword",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_7ls",
-                  "name": "Cryptic Sword",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_7wd",
-                  "name": "Mythical Sword",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_72h",
-                  "name": "Legend Sword",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_7cm",
-                  "name": "Highland Blade",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_7gs",
-                  "name": "Balrog Blade",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_7b7",
-                  "name": "Champion Sword",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_7fb",
-                  "name": "Colossus Sword",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_7gd",
-                  "name": "Colossus Blade",
-                  "type": "checkbox"
-                }
-              ]
-            },
-            {
-              "id": "eliteThrowing",
-              "name": "Throwing",
-              "type": "section",
-              "defaultExpanded": false,
-              "children": [
-                {
-                  "id": "bth_7tk",
-                  "name": "Flying Knife",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_7bk",
-                  "name": "Winged Knife",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_7ta",
-                  "name": "Flying Axe",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_7b8",
-                  "name": "Winged Axe",
-                  "type": "checkbox"
-                }
-              ]
-            },
-            {
-              "id": "eliteWand",
-              "name": "Wand",
-              "type": "section",
-              "defaultExpanded": false,
-              "children": [
-                {
-                  "id": "bth_7wn",
-                  "name": "Polished Wand",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_7yw",
-                  "name": "Ghost Wand",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_7bw",
-                  "name": "Lich Wand",
-                  "type": "checkbox"
-                },
-                {
-                  "id": "bth_7gw",
-                  "name": "Unearthed Wand",
-                  "type": "checkbox"
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "misc",
-      "name": "Miscellaneous",
-      "type": "section",
-      "children": [
-        {
-          "id": "misc_gold",
-          "name": "Hide 'gold' caption in gold drops",
-          "type": "checkbox"
-        },
-        {
-          "id": "misc_gemhl",
-          "name": "More vivid gem names",
-          "type": "checkbox",
-          "defaultValue": true
-        }
-      ]
-    }
-  ]
+	"name":"Enigmator",
+	"description":"Item highlighter for Diablo II: Resurrected - Never miss a drop again!",
+	"author":"Noobient",
+	"website":"https://noobient.com/enigmator/",
+	"version":"1.0",
+	"config":[
+		{
+			"id":"illuminateRunes",
+			"name":"Illuminate Runes",
+			"description":"Illuminate runes when dropped.",
+			"type":"section",
+			"children":[
+				{
+					"id":"lowRunes",
+					"name":"Low Runes",
+					"type":"section",
+					"defaultExpanded":false,
+					"children":[
+						{
+							"id":"lbr_r01",
+							"name":"El",
+							"type":"checkbox"
+						},
+						{
+							"id":"lbr_r02",
+							"name":"Eld",
+							"type":"checkbox"
+						},
+						{
+							"id":"lbr_r03",
+							"name":"Tir",
+							"type":"checkbox"
+						},
+						{
+							"id":"lbr_r04",
+							"name":"Nef",
+							"type":"checkbox"
+						},
+						{
+							"id":"lbr_r05",
+							"name":"Eth",
+							"type":"checkbox"
+						},
+						{
+							"id":"lbr_r06",
+							"name":"Ith",
+							"type":"checkbox"
+						},
+						{
+							"id":"lbr_r07",
+							"name":"Tal",
+							"type":"checkbox"
+						},
+						{
+							"id":"lbr_r08",
+							"name":"Ral",
+							"type":"checkbox"
+						},
+						{
+							"id":"lbr_r09",
+							"name":"Ort",
+							"type":"checkbox"
+						},
+						{
+							"id":"lbr_r10",
+							"name":"Thul",
+							"type":"checkbox"
+						},
+						{
+							"id":"lbr_r11",
+							"name":"Amn",
+							"type":"checkbox"
+						},
+						{
+							"id":"lbr_r12",
+							"name":"Sol",
+							"type":"checkbox"
+						},
+						{
+							"id":"lbr_r13",
+							"name":"Shael",
+							"type":"checkbox"
+						},
+						{
+							"id":"lbr_r14",
+							"name":"Dol",
+							"type":"checkbox"
+						},
+						{
+							"id":"lbr_r15",
+							"name":"Hel",
+							"type":"checkbox"
+						},
+						{
+							"id":"lbr_r16",
+							"name":"Io",
+							"type":"checkbox"
+						},
+						{
+							"id":"lbr_r17",
+							"name":"Lum",
+							"type":"checkbox"
+						},
+						{
+							"id":"lbr_r18",
+							"name":"Ko",
+							"type":"checkbox"
+						},
+						{
+							"id":"lbr_r19",
+							"name":"Fal",
+							"type":"checkbox"
+						}
+					]
+				},
+				{
+					"id":"mediumRunes",
+					"name":"Medium Runes",
+					"type":"section",
+					"defaultExpanded":false,
+					"children":[
+						{
+							"id":"lbr_r20",
+							"name":"Lem",
+							"type":"checkbox",
+							"defaultValue":true
+						},
+						{
+							"id":"lbr_r21",
+							"name":"Pul",
+							"type":"checkbox",
+							"defaultValue":true
+						},
+						{
+							"id":"lbr_r22",
+							"name":"Um",
+							"type":"checkbox",
+							"defaultValue":true
+						},
+						{
+							"id":"lbr_r23",
+							"name":"Mal",
+							"type":"checkbox",
+							"defaultValue":true
+						},
+						{
+							"id":"lbr_r24",
+							"name":"Ist",
+							"type":"checkbox",
+							"defaultValue":true
+						}
+					]
+				},
+				{
+					"id":"mediumHighRunes",
+					"name":"Medium-High Runes",
+					"type":"section",
+					"defaultExpanded":false,
+					"children":[
+						{
+							"id":"lbr_r25",
+							"name":"Gul",
+							"type":"checkbox",
+							"defaultValue":true
+						},
+						{
+							"id":"lbr_r26",
+							"name":"Vex",
+							"type":"checkbox",
+							"defaultValue":true
+						},
+						{
+							"id":"lbr_r27",
+							"name":"Ohm",
+							"type":"checkbox",
+							"defaultValue":true
+						},
+						{
+							"id":"lbr_r28",
+							"name":"Lo",
+							"type":"checkbox",
+							"defaultValue":true
+						}
+					]
+				},
+				{
+					"id":"highRunes",
+					"name":"High Runes",
+					"type":"section",
+					"defaultExpanded":false,
+					"children":[
+						{
+							"id":"lbr_r29",
+							"name":"Sur",
+							"type":"checkbox",
+							"defaultValue":true
+						},
+						{
+							"id":"lbr_r30",
+							"name":"Ber",
+							"type":"checkbox",
+							"defaultValue":true
+						},
+						{
+							"id":"lbr_r31",
+							"name":"Jah",
+							"type":"checkbox",
+							"defaultValue":true
+						},
+						{
+							"id":"lbr_r32",
+							"name":"Cham",
+							"type":"checkbox",
+							"defaultValue":true
+						},
+						{
+							"id":"lbr_r33",
+							"name":"Zod",
+							"type":"checkbox",
+							"defaultValue":true
+						}
+					]
+				}
+			]
+		},
+		{
+			"id":"highlightBases",
+			"name":"Highlight Bases",
+			"description":"Option to highlight desirable runeword / recipe bases with a colorful suffix. Due to technical limitations, this will also apply to magic, rare, and unique items.",
+			"type":"section",
+			"children":[
+				{
+					"id":"normal",
+					"name":"Normal",
+					"type":"section",
+					"defaultExpanded":false,
+					"children":[
+						{
+							"id":"normalAmazonWeapon",
+							"name":"Amazon Weapon",
+							"type":"section",
+							"defaultExpanded":false,
+							"children":[
+								{
+									"id":"bth_am1",
+									"name":"Stag Bow",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_am2",
+									"name":"Reflex Bow",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_am3",
+									"name":"Maiden Spear",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_am4",
+									"name":"Maiden Pike",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_am5",
+									"name":"Maiden Javelin",
+									"type":"checkbox"
+								}
+							]
+						},
+						{
+							"id":"normalArmor",
+							"name":"Armor",
+							"type":"section",
+							"defaultExpanded":false,
+							"children":[
+								{
+									"id":"bth_qui",
+									"name":"Quilted Armor",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_lea",
+									"name":"Leather Armor",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_hla",
+									"name":"Hard Leather Armor",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_stu",
+									"name":"Studded Leather",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_rng",
+									"name":"Ring Mail",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_scl",
+									"name":"Scale Mail",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_brs",
+									"name":"Breast Plate",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_chn",
+									"name":"Chain Mail",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_spl",
+									"name":"Splint Mail",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_ltp",
+									"name":"Light Plate",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_fld",
+									"name":"Field Plate",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_plt",
+									"name":"Plate Mail",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_gth",
+									"name":"Gothic Plate",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_ful",
+									"name":"Full Plate Mail",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_aar",
+									"name":"Ancient Armor",
+									"type":"checkbox"
+								}
+							]
+						},
+						{
+							"id":"normalAxe",
+							"name":"Axe",
+							"type":"section",
+							"defaultExpanded":false,
+							"children":[
+								{
+									"id":"bth_hax",
+									"name":"Hand Axe",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_axe",
+									"name":"Axe",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_2ax",
+									"name":"Double Axe",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_mpi",
+									"name":"Military Pick",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_wax",
+									"name":"War Axe",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_lax",
+									"name":"Large Axe",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_bax",
+									"name":"Broad Axe",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_btx",
+									"name":"Battle Axe",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_gax",
+									"name":"Great Axe",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_gix",
+									"name":"Giant Axe",
+									"type":"checkbox"
+								}
+							]
+						},
+						{
+							"id":"normalBarbarianHelm",
+							"name":"Barbarian Helm",
+							"type":"section",
+							"defaultExpanded":false,
+							"children":[
+								{
+									"id":"bth_",
+									"name":"Jawbone Cap",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_ba2",
+									"name":"Fanged Helm",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_ba3",
+									"name":"Horned Helm",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_ba4",
+									"name":"Assault Helmet",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_ba5",
+									"name":"Avenger Guard",
+									"type":"checkbox"
+								}
+							]
+						},
+						{
+							"id":"normalBelt",
+							"name":"Belt",
+							"type":"section",
+							"defaultExpanded":false,
+							"children":[
+								{
+									"id":"bth_lbl",
+									"name":"Sash",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_vbl",
+									"name":"Light Belt",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_mbl",
+									"name":"Belt",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_tbl",
+									"name":"Heavy Belt",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_hbl",
+									"name":"Plated Belt",
+									"type":"checkbox"
+								}
+							]
+						},
+						{
+							"id":"normalBoot",
+							"name":"Boot",
+							"type":"section",
+							"defaultExpanded":false,
+							"children":[
+								{
+									"id":"bth_lbt",
+									"name":"Boots",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_vbt",
+									"name":"Heavy Boots",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_mbt",
+									"name":"Chain Boots",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_tbt",
+									"name":"Light Plated Boots",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_hbt",
+									"name":"Greaves",
+									"type":"checkbox"
+								}
+							]
+						},
+						{
+							"id":"normalBow",
+							"name":"Bow",
+							"type":"section",
+							"defaultExpanded":false,
+							"children":[
+								{
+									"id":"bth_sbw",
+									"name":"Short Bow",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_hbw",
+									"name":"Hunter's Bow",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_lbw",
+									"name":"Long Bow",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_cbw",
+									"name":"Composite Bow",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_sbb",
+									"name":"Short Battle Bow",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_lbb",
+									"name":"Long Battle Bow",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_swb",
+									"name":"Short War Bow",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_lwb",
+									"name":"Long War Bow",
+									"type":"checkbox"
+								}
+							]
+						},
+						{
+							"id":"normalCrossbow",
+							"name":"Crossbow",
+							"type":"section",
+							"defaultExpanded":false,
+							"children":[
+								{
+									"id":"bth_lxb",
+									"name":"Light Crossbow",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_mxb",
+									"name":"Crossbow",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_hxb",
+									"name":"Heavy Crossbow",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_rxb",
+									"name":"Repeating Crossbow",
+									"type":"checkbox"
+								}
+							]
+						},
+						{
+							"id":"normalDagger",
+							"name":"Dagger",
+							"type":"section",
+							"defaultExpanded":false,
+							"children":[
+								{
+									"id":"bth_dgr",
+									"name":"Dagger",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_dir",
+									"name":"Dirk",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_kri",
+									"name":"Kris",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_bld",
+									"name":"Blade",
+									"type":"checkbox"
+								}
+							]
+						},
+						{
+							"id":"normalGlove",
+							"name":"Glove",
+							"type":"section",
+							"defaultExpanded":false,
+							"children":[
+								{
+									"id":"bth_lgl",
+									"name":"Leather Gloves",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_vgl",
+									"name":"Heavy Gloves",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_mgl",
+									"name":"Chain Gloves",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_tgl",
+									"name":"Light Gauntlets",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_hgl",
+									"name":"Gauntlets",
+									"type":"checkbox"
+								}
+							]
+						},
+						{
+							"id":"normalHelm",
+							"name":"Helm",
+							"type":"section",
+							"defaultExpanded":false,
+							"children":[
+								{
+									"id":"bth_cap",
+									"name":"Cap",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_skp",
+									"name":"Skull Cap",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_hlm",
+									"name":"Helm",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_fhl",
+									"name":"Full Helm",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_ghm",
+									"name":"Great Helm",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_msk",
+									"name":"Mask",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_crn",
+									"name":"Crown",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_bhm",
+									"name":"Bone Helm",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_ci0",
+									"name":"Circlet",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_ci1",
+									"name":"Coronet",
+									"type":"checkbox"
+								}
+							]
+						},
+						{
+							"id":"normalJavelin",
+							"name":"Javelin",
+							"type":"section",
+							"defaultExpanded":false,
+							"children":[
+								{
+									"id":"bth_jav",
+									"name":"Javelin",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_pil",
+									"name":"Pilum",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_ssp",
+									"name":"Short Spear",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_glv",
+									"name":"Glaive",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_tsp",
+									"name":"Throwing Spear",
+									"type":"checkbox"
+								}
+							]
+						},
+						{
+							"id":"normalKatar",
+							"name":"Katar",
+							"type":"section",
+							"defaultExpanded":false,
+							"children":[
+								{
+									"id":"bth_ktr",
+									"name":"Katar",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_wrb",
+									"name":"Wrist Blade",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_axf",
+									"name":"Hatchet Hands",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_ces",
+									"name":"Cestus",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_clw",
+									"name":"Claws",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_btl",
+									"name":"Blade Talons",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_skr",
+									"name":"Scissors Katar",
+									"type":"checkbox"
+								}
+							]
+						},
+						{
+							"id":"normalMace",
+							"name":"Mace",
+							"type":"section",
+							"defaultExpanded":false,
+							"children":[
+								{
+									"id":"bth_clb",
+									"name":"Club",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_spc",
+									"name":"Spiked Club",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_mac",
+									"name":"Mace",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_mst",
+									"name":"Morning Star",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_fla",
+									"name":"Flail",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_whm",
+									"name":"War Hammer",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_mau",
+									"name":"Maul",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_gma",
+									"name":"Great Maul",
+									"type":"checkbox"
+								}
+							]
+						},
+						{
+							"id":"normalOrb",
+							"name":"Orb",
+							"type":"section",
+							"defaultExpanded":false,
+							"children":[
+								{
+									"id":"bth_ob1",
+									"name":"Eagle Orb",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_ob2",
+									"name":"Sacred Globe",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_ob3",
+									"name":"Smoked Sphere",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_ob4",
+									"name":"Clasped Orb",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_ob5",
+									"name":"Jared's Stone",
+									"type":"checkbox"
+								}
+							]
+						},
+						{
+							"id":"normalPaladinShield",
+							"name":"Paladin Shield",
+							"type":"section",
+							"defaultExpanded":false,
+							"children":[
+								{
+									"id":"bth_pa1",
+									"name":"Targe",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_pa2",
+									"name":"Rondache",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_pa3",
+									"name":"Heraldic Shield",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_pa4",
+									"name":"Aerin Shield",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_pa5",
+									"name":"Crown Shield",
+									"type":"checkbox"
+								}
+							]
+						},
+						{
+							"id":"normalPelt",
+							"name":"Pelt",
+							"type":"section",
+							"defaultExpanded":false,
+							"children":[
+								{
+									"id":"bth_dr1",
+									"name":"Wolf Head",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_dr2",
+									"name":"Hawk Helm",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_dr3",
+									"name":"Antlers",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_dr4",
+									"name":"Falcon Mask",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_dr5",
+									"name":"Spirit Mask",
+									"type":"checkbox"
+								}
+							]
+						},
+						{
+							"id":"normalPolearm",
+							"name":"Polearm",
+							"type":"section",
+							"defaultExpanded":false,
+							"children":[
+								{
+									"id":"bth_bar",
+									"name":"Bardiche",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_vou",
+									"name":"Voulge",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_scy",
+									"name":"Scythe",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_pax",
+									"name":"Poleaxe",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_hal",
+									"name":"Halberd",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_wsc",
+									"name":"War Scythe",
+									"type":"checkbox"
+								}
+							]
+						},
+						{
+							"id":"normalScepter",
+							"name":"Scepter",
+							"type":"section",
+							"defaultExpanded":false,
+							"children":[
+								{
+									"id":"bth_scp",
+									"name":"Scepter",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_gsc",
+									"name":"Grand Scepter",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_wsp",
+									"name":"War Scepter",
+									"type":"checkbox"
+								}
+							]
+						},
+						{
+							"id":"normalShield",
+							"name":"Shield",
+							"type":"section",
+							"defaultExpanded":false,
+							"children":[
+								{
+									"id":"bth_buc",
+									"name":"Buckler",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_sml",
+									"name":"Small Shield",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_lrg",
+									"name":"Large Shield",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_kit",
+									"name":"Kite Shield",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_spk",
+									"name":"Spiked Shield",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_tow",
+									"name":"Tower Shield",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_bsh",
+									"name":"Bone Shield",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_gts",
+									"name":"Gothic Shield",
+									"type":"checkbox"
+								}
+							]
+						},
+						{
+							"id":"normalShrunkenHead",
+							"name":"Shrunken Head",
+							"type":"section",
+							"defaultExpanded":false,
+							"children":[
+								{
+									"id":"bth_ne1",
+									"name":"Preserved Head",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_ne2",
+									"name":"Zombie Head",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_ne3",
+									"name":"Unraveller Head",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_ne4",
+									"name":"Gargoyle Head",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_ne5",
+									"name":"Demon Head",
+									"type":"checkbox"
+								}
+							]
+						},
+						{
+							"id":"normalSpear",
+							"name":"Spear",
+							"type":"section",
+							"defaultExpanded":false,
+							"children":[
+								{
+									"id":"bth_spr",
+									"name":"Spear",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_tri",
+									"name":"Trident",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_brn",
+									"name":"Brandistock",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_spt",
+									"name":"Spetum",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_pik",
+									"name":"Pike",
+									"type":"checkbox"
+								}
+							]
+						},
+						{
+							"id":"normalStaff",
+							"name":"Staff",
+							"type":"section",
+							"defaultExpanded":false,
+							"children":[
+								{
+									"id":"bth_sst",
+									"name":"Short Staff",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_lst",
+									"name":"Long Staff",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_cst",
+									"name":"Gnarled Staff",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_bst",
+									"name":"Battle Staff",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_wst",
+									"name":"War Staff",
+									"type":"checkbox"
+								}
+							]
+						},
+						{
+							"id":"normalSword",
+							"name":"Sword",
+							"type":"section",
+							"defaultExpanded":false,
+							"children":[
+								{
+									"id":"bth_ssd",
+									"name":"Short Sword",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_scm",
+									"name":"Scimitar",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_sbr",
+									"name":"Sabre",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_flc",
+									"name":"Falchion",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_crs",
+									"name":"Crystal Sword",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_bsd",
+									"name":"Broad Sword",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_lsd",
+									"name":"Long Sword",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_wsd",
+									"name":"War Sword",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_2hs",
+									"name":"Two-handed Sword",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_clm",
+									"name":"Claymore",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_gis",
+									"name":"Giant Sword",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_bsw",
+									"name":"Bastard Sword",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_flb",
+									"name":"Flamberge",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_gsd",
+									"name":"Great Sword",
+									"type":"checkbox"
+								}
+							]
+						},
+						{
+							"id":"normalThrowing",
+							"name":"Throwing",
+							"type":"section",
+							"defaultExpanded":false,
+							"children":[
+								{
+									"id":"bth_tkf",
+									"name":"Throwing Knife",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_bkf",
+									"name":"Balanced Knife",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_tax",
+									"name":"Throwing Axe",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_bal",
+									"name":"Balanced Axe",
+									"type":"checkbox"
+								}
+							]
+						},
+						{
+							"id":"normalWand",
+							"name":"Wand",
+							"type":"section",
+							"defaultExpanded":false,
+							"children":[
+								{
+									"id":"bth_wnd",
+									"name":"Wand",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_ywn",
+									"name":"Yew Wand",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_bwn",
+									"name":"Bone Wand",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_gwn",
+									"name":"Grim Wand",
+									"type":"checkbox"
+								}
+							]
+						}
+					]
+				},
+				{
+					"id":"exceptional",
+					"name":"Exceptional",
+					"type":"section",
+					"defaultExpanded":false,
+					"children":[
+						{
+							"id":"exceptionalAmazonWeapon",
+							"name":"Amazon Weapon",
+							"type":"section",
+							"defaultExpanded":false,
+							"children":[
+								{
+									"id":"bth_am6",
+									"name":"Ashwood Bow",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_am7",
+									"name":"Ceremonial Bow",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_am8",
+									"name":"Ceremonial Spear",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_am9",
+									"name":"Ceremonial Pike",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_ama",
+									"name":"Ceremonial Javelin",
+									"type":"checkbox"
+								}
+							]
+						},
+						{
+							"id":"exceptionalArmor",
+							"name":"Armor",
+							"type":"section",
+							"defaultExpanded":false,
+							"children":[
+								{
+									"id":"bth_xui",
+									"name":"Ghost Armor",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_xea",
+									"name":"Serpentskin Armor",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_xla",
+									"name":"Demonhide Armor",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_xtu",
+									"name":"Trellised Armor",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_xng",
+									"name":"Linked Mail",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_xcl",
+									"name":"Tigulated Mail",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_xrs",
+									"name":"Cuirass",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_xhn",
+									"name":"Mesh Armor",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_xpl",
+									"name":"Russet Armor",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_xtp",
+									"name":"Mage Plate",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_xld",
+									"name":"Sharktooth Armor",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_xlt",
+									"name":"Templar Coat",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_xth",
+									"name":"Embossed Plate",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_xul",
+									"name":"Chaos Armor",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_xar",
+									"name":"Ornate Plate",
+									"type":"checkbox"
+								}
+							]
+						},
+						{
+							"id":"exceptionalAxe",
+							"name":"Axe",
+							"type":"section",
+							"defaultExpanded":false,
+							"children":[
+								{
+									"id":"bth_9ha",
+									"name":"Hatchet",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_9ax",
+									"name":"Cleaver",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_92a",
+									"name":"Twin Axe",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_9mp",
+									"name":"Crowbill",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_9wa",
+									"name":"Naga",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_9la",
+									"name":"Military Axe",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_9ba",
+									"name":"Bearded Axe",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_9bt",
+									"name":"Tabar",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_9ga",
+									"name":"Gothic Axe",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_9gi",
+									"name":"Ancient Axe",
+									"type":"checkbox"
+								}
+							]
+						},
+						{
+							"id":"exceptionalBarbarianHelm",
+							"name":"Barbarian Helm",
+							"type":"section",
+							"defaultExpanded":false,
+							"children":[
+								{
+									"id":"bth_ba6",
+									"name":"Jawbone Visor",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_ba7",
+									"name":"Lion Helm",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_ba8",
+									"name":"Rage Mask",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_ba9",
+									"name":"Savage Helmet",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_baa",
+									"name":"Slayer Guard",
+									"type":"checkbox"
+								}
+							]
+						},
+						{
+							"id":"exceptionalBelt",
+							"name":"Belt",
+							"type":"section",
+							"defaultExpanded":false,
+							"children":[
+								{
+									"id":"bth_zlb",
+									"name":"Demonhide Sash",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_zvb",
+									"name":"Sharkskin Belt",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_zmb",
+									"name":"Mesh Belt",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_ztb",
+									"name":"Battle Belt",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_zhb",
+									"name":"War Belt",
+									"type":"checkbox"
+								}
+							]
+						},
+						{
+							"id":"exceptionalBoot",
+							"name":"Boot",
+							"type":"section",
+							"defaultExpanded":false,
+							"children":[
+								{
+									"id":"bth_xlb",
+									"name":"Demonhide Boots",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_xvb",
+									"name":"Sharkskin Boots",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_xmb",
+									"name":"Mesh Boots",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_xtb",
+									"name":"Battle Boots",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_xhb",
+									"name":"War Boots",
+									"type":"checkbox"
+								}
+							]
+						},
+						{
+							"id":"exceptionalBow",
+							"name":"Bow",
+							"type":"section",
+							"defaultExpanded":false,
+							"children":[
+								{
+									"id":"bth_8sb",
+									"name":"Edge Bow",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_8hb",
+									"name":"Razor Bow",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_8lb",
+									"name":"Cedar Bow",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_8cb",
+									"name":"Double Bow",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_8s8",
+									"name":"Short Siege Bow",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_8l8",
+									"name":"Large Siege Bow",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_8sw",
+									"name":"Rune Bow",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_8lw",
+									"name":"Gothic Bow",
+									"type":"checkbox"
+								}
+							]
+						},
+						{
+							"id":"exceptionalCrossbow",
+							"name":"Crossbow",
+							"type":"section",
+							"defaultExpanded":false,
+							"children":[
+								{
+									"id":"bth_8lx",
+									"name":"Arbalest",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_8mx",
+									"name":"Siege Crossbow",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_8hx",
+									"name":"Ballista",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_8rx",
+									"name":"Chu-Ko-Nu",
+									"type":"checkbox"
+								}
+							]
+						},
+						{
+							"id":"exceptionalDagger",
+							"name":"Dagger",
+							"type":"section",
+							"defaultExpanded":false,
+							"children":[
+								{
+									"id":"bth_9dg",
+									"name":"Poignard",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_9di",
+									"name":"Rondel",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_9kr",
+									"name":"Cinquedeas",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_9bl",
+									"name":"Stiletto",
+									"type":"checkbox"
+								}
+							]
+						},
+						{
+							"id":"exceptionalGlove",
+							"name":"Glove",
+							"type":"section",
+							"defaultExpanded":false,
+							"children":[
+								{
+									"id":"bth_xlg",
+									"name":"Demonhide Gloves",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_xvg",
+									"name":"Sharkskin Gloves",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_xmg",
+									"name":"Heavy Bracers",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_xtg",
+									"name":"Battle Gauntlets",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_xhg",
+									"name":"War Gauntlets",
+									"type":"checkbox"
+								}
+							]
+						},
+						{
+							"id":"exceptionalHelm",
+							"name":"Helm",
+							"type":"section",
+							"defaultExpanded":false,
+							"children":[
+								{
+									"id":"bth_xap",
+									"name":"War Hat",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_xkp",
+									"name":"Sallet",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_xlm",
+									"name":"Casque",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_xhl",
+									"name":"Basinet",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_xhm",
+									"name":"Winged Helm",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_xsk",
+									"name":"Death Mask",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_xrn",
+									"name":"Grand Crown",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_xh9",
+									"name":"Grim Helm",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_ci2",
+									"name":"Tiara",
+									"type":"checkbox"
+								}
+							]
+						},
+						{
+							"id":"exceptionalJavelin",
+							"name":"Javelin",
+							"type":"section",
+							"defaultExpanded":false,
+							"children":[
+								{
+									"id":"bth_9ja",
+									"name":"War Javelin",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_9pi",
+									"name":"Great Pilum",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_9s9",
+									"name":"Simbilan",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_9gl",
+									"name":"Spiculum",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_9ts",
+									"name":"Harpoon",
+									"type":"checkbox"
+								}
+							]
+						},
+						{
+							"id":"exceptionalKatar",
+							"name":"Katar",
+							"type":"section",
+							"defaultExpanded":false,
+							"children":[
+								{
+									"id":"bth_9ar",
+									"name":"Quhab",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_9wb",
+									"name":"Wrist Spike",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_9xf",
+									"name":"Fascia",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_9cs",
+									"name":"Hand Scythe",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_9lw",
+									"name":"Greater Claws",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_9tw",
+									"name":"Greater Talons",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_9qr",
+									"name":"Scissors Quhab",
+									"type":"checkbox"
+								}
+							]
+						},
+						{
+							"id":"exceptionalMace",
+							"name":"Mace",
+							"type":"section",
+							"defaultExpanded":false,
+							"children":[
+								{
+									"id":"bth_9cl",
+									"name":"Cudgel",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_9sp",
+									"name":"Barbed Club",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_9ma",
+									"name":"Flanged Mace",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_9mt",
+									"name":"Jagged Star",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_9fl",
+									"name":"Knout",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_9wh",
+									"name":"Battle Hammer",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_9m9",
+									"name":"War Club",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_9gm",
+									"name":"Martel de Fer",
+									"type":"checkbox"
+								}
+							]
+						},
+						{
+							"id":"exceptionalOrb",
+							"name":"Orb",
+							"type":"section",
+							"defaultExpanded":false,
+							"children":[
+								{
+									"id":"bth_ob6",
+									"name":"Glowing Orb",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_ob7",
+									"name":"Crystalline Globe",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_ob8",
+									"name":"Cloudy Sphere",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_ob9",
+									"name":"Sparkling Ball",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_oba",
+									"name":"Swirling Crystal",
+									"type":"checkbox"
+								}
+							]
+						},
+						{
+							"id":"exceptionalPaladinShield",
+							"name":"Paladin Shield",
+							"type":"section",
+							"defaultExpanded":false,
+							"children":[
+								{
+									"id":"bth_pa6",
+									"name":"Akaran Targe",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_pa7",
+									"name":"Akaran Rondache",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_pa8",
+									"name":"Protector Shield",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_pa9",
+									"name":"Gilded Shield",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_paa",
+									"name":"Royal Shield",
+									"type":"checkbox"
+								}
+							]
+						},
+						{
+							"id":"exceptionalPelt",
+							"name":"Pelt",
+							"type":"section",
+							"defaultExpanded":false,
+							"children":[
+								{
+									"id":"bth_dr6",
+									"name":"Alpha Helm",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_dr7",
+									"name":"Griffon Headdress",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_dr8",
+									"name":"Hunter's Guise",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_dr9",
+									"name":"Sacred Feathers",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_dra",
+									"name":"Totemic Mask",
+									"type":"checkbox"
+								}
+							]
+						},
+						{
+							"id":"exceptionalPolearm",
+							"name":"Polearm",
+							"type":"section",
+							"defaultExpanded":false,
+							"children":[
+								{
+									"id":"bth_9b7",
+									"name":"Lochaber Axe",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_9vo",
+									"name":"Bill",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_9s8",
+									"name":"Battle Scythe",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_9pa",
+									"name":"Partizan",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_9h9",
+									"name":"Bec-De-Corbin",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_9wc",
+									"name":"Grim Scythe",
+									"type":"checkbox"
+								}
+							]
+						},
+						{
+							"id":"exceptionalScepter",
+							"name":"Scepter",
+							"type":"section",
+							"defaultExpanded":false,
+							"children":[
+								{
+									"id":"bth_9sc",
+									"name":"Rune Scepter",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_9qs",
+									"name":"Holy Water Sprinkler",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_9ws",
+									"name":"Divine Scepter",
+									"type":"checkbox"
+								}
+							]
+						},
+						{
+							"id":"exceptionalShield",
+							"name":"Shield",
+							"type":"section",
+							"defaultExpanded":false,
+							"children":[
+								{
+									"id":"bth_xuc",
+									"name":"Defender",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_xml",
+									"name":"Round Shield",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_xrg",
+									"name":"Scutum",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_xpk",
+									"name":"Barbed Shield",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_xit",
+									"name":"Dragon Shield",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_xsh",
+									"name":"Grim Shield",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_xow",
+									"name":"Pavise",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_xts",
+									"name":"Ancient Shield",
+									"type":"checkbox"
+								}
+							]
+						},
+						{
+							"id":"exceptionalShrunkenHead",
+							"name":"Shrunken Head",
+							"type":"section",
+							"defaultExpanded":false,
+							"children":[
+								{
+									"id":"bth_ne6",
+									"name":"Mummified Trophy",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_ne7",
+									"name":"Fetish Trophy",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_ne8",
+									"name":"Sexton Trophy",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_ne9",
+									"name":"Cantor Trophy",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_nea",
+									"name":"Hierophant Trophy",
+									"type":"checkbox"
+								}
+							]
+						},
+						{
+							"id":"exceptionalSpear",
+							"name":"Spear",
+							"type":"section",
+							"defaultExpanded":false,
+							"children":[
+								{
+									"id":"bth_9sr",
+									"name":"War Spear",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_9tr",
+									"name":"Fuscina",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_9br",
+									"name":"War Fork",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_9st",
+									"name":"Yari",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_9p9",
+									"name":"Lance",
+									"type":"checkbox"
+								}
+							]
+						},
+						{
+							"id":"exceptionalStaff",
+							"name":"Staff",
+							"type":"section",
+							"defaultExpanded":false,
+							"children":[
+								{
+									"id":"bth_8ss",
+									"name":"Jo Staff",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_8ls",
+									"name":"Quarterstaff",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_8cs",
+									"name":"Cedar Staff",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_8bs",
+									"name":"Gothic Staff",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_8ws",
+									"name":"Rune Staff",
+									"type":"checkbox"
+								}
+							]
+						},
+						{
+							"id":"exceptionalSword",
+							"name":"Sword",
+							"type":"section",
+							"defaultExpanded":false,
+							"children":[
+								{
+									"id":"bth_9ss",
+									"name":"Gladius",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_9sm",
+									"name":"Cutlass",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_9sb",
+									"name":"Shamshir",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_9fc",
+									"name":"Tulwar",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_9cr",
+									"name":"Dimensional Blade",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_9bs",
+									"name":"Battle Sword",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_9ls",
+									"name":"Rune Sword",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_9wd",
+									"name":"Ancient Sword",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_92h",
+									"name":"Espandon",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_9cm",
+									"name":"Dacian Falx",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_9gs",
+									"name":"Tusk Sword",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_9b9",
+									"name":"Gothic Sword",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_9fb",
+									"name":"Zweihander",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_9gd",
+									"name":"Executioner Sword",
+									"type":"checkbox"
+								}
+							]
+						},
+						{
+							"id":"exceptionalThrowing",
+							"name":"Throwing",
+							"type":"section",
+							"defaultExpanded":false,
+							"children":[
+								{
+									"id":"bth_9tk",
+									"name":"Battle Dart",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_9bk",
+									"name":"War Dart",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_9ta",
+									"name":"Francisca",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_9b8",
+									"name":"Hurlbat",
+									"type":"checkbox"
+								}
+							]
+						},
+						{
+							"id":"exceptionalWand",
+							"name":"Wand",
+							"type":"section",
+							"defaultExpanded":false,
+							"children":[
+								{
+									"id":"bth_9wn",
+									"name":"Burnt Wand",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_9yw",
+									"name":"Petrified Wand",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_9bw",
+									"name":"Tomb Wand",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_9gw",
+									"name":"Grave Wand",
+									"type":"checkbox"
+								}
+							]
+						}
+					]
+				},
+				{
+					"id":"elite",
+					"name":"Elite",
+					"type":"section",
+					"defaultExpanded":false,
+					"children":[
+						{
+							"id":"eliteAmazonWeapon",
+							"name":"Amazon Weapon",
+							"type":"section",
+							"defaultExpanded":false,
+							"children":[
+								{
+									"id":"bth_amb",
+									"name":"Matriarchal Bow",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_amc",
+									"name":"Grand Matron Bow",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_amd",
+									"name":"Matriarchal Spear",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_ame",
+									"name":"Matriarchal Pike",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_amf",
+									"name":"Matriarchal Javelin",
+									"type":"checkbox"
+								}
+							]
+						},
+						{
+							"id":"eliteArmor",
+							"name":"Armor",
+							"type":"section",
+							"defaultExpanded":false,
+							"children":[
+								{
+									"id":"bth_uui",
+									"name":"Dusk Shroud",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_uea",
+									"name":"Wyrmhide",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_ula",
+									"name":"Scarab Husk",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_utu",
+									"name":"Wire Fleece",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_ung",
+									"name":"Diamond Mail",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_ucl",
+									"name":"Loricated Mail",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_urs",
+									"name":"Great Hauberk",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_umb",
+									"name":"Boneweave",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_upl",
+									"name":"Balrog Skin",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_utp",
+									"name":"Archon Plate",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_uld",
+									"name":"Kraken Shell",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_ult",
+									"name":"Hellforge Plate",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_uth",
+									"name":"Lacquered Plate",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_uul",
+									"name":"Shadow Plate",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_uar",
+									"name":"Sacred Armor",
+									"type":"checkbox"
+								}
+							]
+						},
+						{
+							"id":"eliteAxe",
+							"name":"Axe",
+							"type":"section",
+							"defaultExpanded":false,
+							"children":[
+								{
+									"id":"bth_7ha",
+									"name":"Tomahawk",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_7ax",
+									"name":"Small Crescent",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_72a",
+									"name":"Ettin Axe",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_7mp",
+									"name":"War Spike",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_7wa",
+									"name":"Berserker Axe",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_7la",
+									"name":"Feral Axe",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_7ba",
+									"name":"Silver-Edged Axe",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_7bt",
+									"name":"Decapitator",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_7ga",
+									"name":"Champion Axe",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_7gi",
+									"name":"Glorious Axe",
+									"type":"checkbox"
+								}
+							]
+						},
+						{
+							"id":"eliteBarbarianHelm",
+							"name":"Barbarian Helm",
+							"type":"section",
+							"defaultExpanded":false,
+							"children":[
+								{
+									"id":"bth_bab",
+									"name":"Carnage Helm",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_bac",
+									"name":"Fury Visor",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_bad",
+									"name":"Destroyer Helm",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_bae",
+									"name":"Conqueror Crown",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_baf",
+									"name":"Guardian Crown",
+									"type":"checkbox"
+								}
+							]
+						},
+						{
+							"id":"eliteBelt",
+							"name":"Belt",
+							"type":"section",
+							"defaultExpanded":false,
+							"children":[
+								{
+									"id":"bth_ulc",
+									"name":"Spiderweb Sash",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_uvc",
+									"name":"Vampirefang Belt",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_umc",
+									"name":"Mithril Coil",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_utc",
+									"name":"Troll Belt",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_uhc",
+									"name":"Colossus Girdle",
+									"type":"checkbox"
+								}
+							]
+						},
+						{
+							"id":"eliteBoot",
+							"name":"Boot",
+							"type":"section",
+							"defaultExpanded":false,
+							"children":[
+								{
+									"id":"bth_ulb",
+									"name":"Wyrmhide Boots",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_uvb",
+									"name":"Scarabshell Boots",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_umb",
+									"name":"Boneweave Boots",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_utb",
+									"name":"Mirrored Boots",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_uhb",
+									"name":"Myrmidon Greaves",
+									"type":"checkbox"
+								}
+							]
+						},
+						{
+							"id":"eliteBow",
+							"name":"Bow",
+							"type":"section",
+							"defaultExpanded":false,
+							"children":[
+								{
+									"id":"bth_6sb",
+									"name":"Spider Bow",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_6hb",
+									"name":"Blade Bow",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_6lb",
+									"name":"Shadow Bow",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_6cb",
+									"name":"Great Bow",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_6s7",
+									"name":"Diamond Bow",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_6l7",
+									"name":"Crusader Bow",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_6sw",
+									"name":"Ward Bow",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_6lw",
+									"name":"Hydra Bow",
+									"type":"checkbox"
+								}
+							]
+						},
+						{
+							"id":"eliteCrossbow",
+							"name":"Crossbow",
+							"type":"section",
+							"defaultExpanded":false,
+							"children":[
+								{
+									"id":"bth_6lx",
+									"name":"Pellet Bow",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_6mx",
+									"name":"Gorgon Crossbow",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_6hx",
+									"name":"Colossus Crossbow",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_6rx",
+									"name":"Demon Crossbow",
+									"type":"checkbox"
+								}
+							]
+						},
+						{
+							"id":"eliteDagger",
+							"name":"Dagger",
+							"type":"section",
+							"defaultExpanded":false,
+							"children":[
+								{
+									"id":"bth_7dg",
+									"name":"Bone Knife",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_7di",
+									"name":"Mithril Point",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_7kr",
+									"name":"Fanged Knife",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_7bl",
+									"name":"Legend Spike",
+									"type":"checkbox"
+								}
+							]
+						},
+						{
+							"id":"eliteGlove",
+							"name":"Glove",
+							"type":"section",
+							"defaultExpanded":false,
+							"children":[
+								{
+									"id":"bth_ulg",
+									"name":"Bramble Mitts",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_uvg",
+									"name":"Vampirebone Gloves",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_umg",
+									"name":"Vambraces",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_utg",
+									"name":"Crusader Gauntlets",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_uhg",
+									"name":"Ogre Gauntlets",
+									"type":"checkbox"
+								}
+							]
+						},
+						{
+							"id":"eliteHelm",
+							"name":"Helm",
+							"type":"section",
+							"defaultExpanded":false,
+							"children":[
+								{
+									"id":"bth_uap",
+									"name":"Shako",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_ukp",
+									"name":"Hydraskull",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_ulm",
+									"name":"Armet",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_uhl",
+									"name":"Giant Conch",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_uhm",
+									"name":"Spired Helm",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_usk",
+									"name":"Demonhead",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_urn",
+									"name":"Corona",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_uh9",
+									"name":"Bone Visage",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_ci3",
+									"name":"Diadem",
+									"type":"checkbox"
+								}
+							]
+						},
+						{
+							"id":"eliteJavelin",
+							"name":"Javelin",
+							"type":"section",
+							"defaultExpanded":false,
+							"children":[
+								{
+									"id":"bth_7ja",
+									"name":"Hyperion Javelin",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_7pi",
+									"name":"Stygian Pilum",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_7s7",
+									"name":"Balrog Spear",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_7gl",
+									"name":"Ghost Glaive",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_7ts",
+									"name":"Winged Harpoon",
+									"type":"checkbox"
+								}
+							]
+						},
+						{
+							"id":"eliteKatar",
+							"name":"Katar",
+							"type":"section",
+							"defaultExpanded":false,
+							"children":[
+								{
+									"id":"bth_7ar",
+									"name":"Suwayyah",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_7wb",
+									"name":"Wrist Sword",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_7xf",
+									"name":"War Fist",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_7cs",
+									"name":"Battle Cestus",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_7lw",
+									"name":"Feral Claws",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_7tw",
+									"name":"Runic Talons",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_7qr",
+									"name":"Scissors Suwayyah",
+									"type":"checkbox"
+								}
+							]
+						},
+						{
+							"id":"eliteMace",
+							"name":"Mace",
+							"type":"section",
+							"defaultExpanded":false,
+							"children":[
+								{
+									"id":"bth_7cl",
+									"name":"Truncheon",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_7sp",
+									"name":"Tyrant Club",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_7ma",
+									"name":"Reinforced Mace",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_7mt",
+									"name":"Devil Star",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_7fl",
+									"name":"Scourge",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_7wh",
+									"name":"Legendary Mallet",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_7m7",
+									"name":"Ogre Maul",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_7gm",
+									"name":"Thunder Maul",
+									"type":"checkbox"
+								}
+							]
+						},
+						{
+							"id":"eliteOrb",
+							"name":"Orb",
+							"type":"section",
+							"defaultExpanded":false,
+							"children":[
+								{
+									"id":"bth_obb",
+									"name":"Heavenly Stone",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_obc",
+									"name":"Eldritch Orb",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_obd",
+									"name":"Demon Heart",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_obe",
+									"name":"Vortex Orb",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_obf",
+									"name":"Dimensional Shard",
+									"type":"checkbox"
+								}
+							]
+						},
+						{
+							"id":"elitePaladinShield",
+							"name":"Paladin Shield",
+							"type":"section",
+							"defaultExpanded":false,
+							"children":[
+								{
+									"id":"bth_pab",
+									"name":"Sacred Targe",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_pac",
+									"name":"Sacred Rondache",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_pad",
+									"name":"Kurast Shield",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_pae",
+									"name":"Zakarum Shield",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_paf",
+									"name":"Vortex Shield",
+									"type":"checkbox"
+								}
+							]
+						},
+						{
+							"id":"elitePelt",
+							"name":"Pelt",
+							"type":"section",
+							"defaultExpanded":false,
+							"children":[
+								{
+									"id":"bth_drb",
+									"name":"Blood Spirit",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_drc",
+									"name":"Sun Spirit",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_drd",
+									"name":"Earth Spirit",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_dre",
+									"name":"Sky Spirit",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_drf",
+									"name":"Dream Spirit",
+									"type":"checkbox"
+								}
+							]
+						},
+						{
+							"id":"elitePolearm",
+							"name":"Polearm",
+							"type":"section",
+							"defaultExpanded":false,
+							"children":[
+								{
+									"id":"bth_7o7",
+									"name":"Ogre Axe",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_7vo",
+									"name":"Colossus Voulge",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_7s8",
+									"name":"Thresher",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_7pa",
+									"name":"Cryptic Axe",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_7h7",
+									"name":"Great Poleaxe",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_7wc",
+									"name":"Giant Thresher",
+									"type":"checkbox"
+								}
+							]
+						},
+						{
+							"id":"eliteScepter",
+							"name":"Scepter",
+							"type":"section",
+							"defaultExpanded":false,
+							"children":[
+								{
+									"id":"bth_7sc",
+									"name":"Mighty Scepter",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_7qs",
+									"name":"Seraph Rod",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_7ws",
+									"name":"Caduceus",
+									"type":"checkbox"
+								}
+							]
+						},
+						{
+							"id":"eliteShield",
+							"name":"Shield",
+							"type":"section",
+							"defaultExpanded":false,
+							"children":[
+								{
+									"id":"bth_uuc",
+									"name":"Heater",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_uml",
+									"name":"Luna",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_urg",
+									"name":"Hyperion",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_uit",
+									"name":"Monarch",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_upk",
+									"name":"Blade Barrier",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_uow",
+									"name":"Aegis",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_ush",
+									"name":"Troll Nest",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_uts",
+									"name":"Ward",
+									"type":"checkbox"
+								}
+							]
+						},
+						{
+							"id":"eliteShrunkenHead",
+							"name":"Shrunken Head",
+							"type":"section",
+							"defaultExpanded":false,
+							"children":[
+								{
+									"id":"bth_neb",
+									"name":"Minion Skull",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_nec",
+									"name":"Hellspawn Skull",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_ned",
+									"name":"Overseer Skull",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_nee",
+									"name":"Succubus Skull",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_nef",
+									"name":"Bloodlord Skull",
+									"type":"checkbox"
+								}
+							]
+						},
+						{
+							"id":"eliteSpear",
+							"name":"Spear",
+							"type":"section",
+							"defaultExpanded":false,
+							"children":[
+								{
+									"id":"bth_7sr",
+									"name":"Hyperion Spear",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_7tr",
+									"name":"Stygian Pike",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_7br",
+									"name":"Mancatcher",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_7st",
+									"name":"Ghost Spear",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_7p7",
+									"name":"War Pike",
+									"type":"checkbox"
+								}
+							]
+						},
+						{
+							"id":"eliteStaff",
+							"name":"Staff",
+							"type":"section",
+							"defaultExpanded":false,
+							"children":[
+								{
+									"id":"bth_6ss",
+									"name":"Walking Stick",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_6ls",
+									"name":"Stalagmite",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_6cs",
+									"name":"Elder Staff",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_6bs",
+									"name":"Shillelagh",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_6ws",
+									"name":"Archon Staff",
+									"type":"checkbox"
+								}
+							]
+						},
+						{
+							"id":"eliteSword",
+							"name":"Sword",
+							"type":"section",
+							"defaultExpanded":false,
+							"children":[
+								{
+									"id":"bth_7ss",
+									"name":"Falcata",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_7sm",
+									"name":"Ataghan",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_7sb",
+									"name":"Elegant Blade",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_7fc",
+									"name":"Hydra Edge",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_7cr",
+									"name":"Phase Blade",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_7bs",
+									"name":"Conquest Sword",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_7ls",
+									"name":"Cryptic Sword",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_7wd",
+									"name":"Mythical Sword",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_72h",
+									"name":"Legend Sword",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_7cm",
+									"name":"Highland Blade",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_7gs",
+									"name":"Balrog Blade",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_7b7",
+									"name":"Champion Sword",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_7fb",
+									"name":"Colossus Sword",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_7gd",
+									"name":"Colossus Blade",
+									"type":"checkbox"
+								}
+							]
+						},
+						{
+							"id":"eliteThrowing",
+							"name":"Throwing",
+							"type":"section",
+							"defaultExpanded":false,
+							"children":[
+								{
+									"id":"bth_7tk",
+									"name":"Flying Knife",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_7bk",
+									"name":"Winged Knife",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_7ta",
+									"name":"Flying Axe",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_7b8",
+									"name":"Winged Axe",
+									"type":"checkbox"
+								}
+							]
+						},
+						{
+							"id":"eliteWand",
+							"name":"Wand",
+							"type":"section",
+							"defaultExpanded":false,
+							"children":[
+								{
+									"id":"bth_7wn",
+									"name":"Polished Wand",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_7yw",
+									"name":"Ghost Wand",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_7bw",
+									"name":"Lich Wand",
+									"type":"checkbox"
+								},
+								{
+									"id":"bth_7gw",
+									"name":"Unearthed Wand",
+									"type":"checkbox"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"id":"misc",
+			"name":"Miscellaneous",
+			"type":"section",
+			"children":[
+				{
+					"id":"misc_gold",
+					"name":"Hide 'gold' caption in gold drops",
+					"type":"checkbox"
+				},
+				{
+					"id":"misc_gemhl",
+					"name":"More vivid gem names",
+					"type":"checkbox",
+					"defaultValue":true
+				}
+			]
+		}
+	]
 }
