@@ -510,6 +510,54 @@
               ]
             },
             {
+              "id": "normalBow",
+              "name": "Bow",
+              "type": "section",
+              "defaultExpanded": false,
+              "children": [
+                {
+                  "id": "bth_sbw",
+                  "name": "Short Bow",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_hbw",
+                  "name": "Hunter's Bow",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_lbw",
+                  "name": "Long Bow",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_cbw",
+                  "name": "Composite Bow",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_sbb",
+                  "name": "Short Battle Bow",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_lbb",
+                  "name": "Long Battle Bow",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_swb",
+                  "name": "Short War Bow",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_lwb",
+                  "name": "Long War Bow",
+                  "type": "checkbox"
+                }
+              ]
+            },
+            {
               "id": "normalCrossbow",
               "name": "Crossbow",
               "type": "section",
@@ -1455,6 +1503,54 @@
               ]
             },
             {
+              "id": "exceptionalBow",
+              "name": "Bow",
+              "type": "section",
+              "defaultExpanded": false,
+              "children": [
+                {
+                  "id": "bth_8sb",
+                  "name": "Edge Bow",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_8hb",
+                  "name": "Razor Bow",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_8lb",
+                  "name": "Cedar Bow",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_8cb",
+                  "name": "Double Bow",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_8s8",
+                  "name": "Short Siege Bow",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_8l8",
+                  "name": "Large Siege Bow",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_8sw",
+                  "name": "Rune Bow",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_8lw",
+                  "name": "Gothic Bow",
+                  "type": "checkbox"
+                }
+              ]
+            },
+            {
               "id": "exceptionalCrossbow",
               "name": "Crossbow",
               "type": "section",
@@ -2390,6 +2486,54 @@
                 {
                   "id": "bth_uhb",
                   "name": "Myrmidon Greaves",
+                  "type": "checkbox"
+                }
+              ]
+            },
+            {
+              "id": "eliteBow",
+              "name": "Bow",
+              "type": "section",
+              "defaultExpanded": false,
+              "children": [
+                {
+                  "id": "bth_6sb",
+                  "name": "Spider Bow",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_6hb",
+                  "name": "Blade Bow",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_6lb",
+                  "name": "Shadow Bow",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_6cb",
+                  "name": "Great Bow",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_6s7",
+                  "name": "Diamond Bow",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_6l7",
+                  "name": "Crusader Bow",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_6sw",
+                  "name": "Ward Bow",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_6lw",
+                  "name": "Hydra Bow",
                   "type": "checkbox"
                 }
               ]
