@@ -599,6 +599,39 @@
               ]
             },
             {
+              "id": "normalJavelin",
+              "name": "",
+              "type": "section",
+              "defaultExpanded": false,
+              "children": [
+                {
+                  "id": "bth_jav",
+                  "name": "Javelin",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_pil",
+                  "name": "Pilum",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_ssp",
+                  "name": "Short Spear",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_glv",
+                  "name": "Glaive",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_tsp",
+                  "name": "Throwing Spear",
+                  "type": "checkbox"
+                }
+              ]
+            },
+            {
               "id": "normalKatar",
               "name": "Katar",
               "type": "section",
@@ -1370,6 +1403,39 @@
               ]
             },
             {
+              "id": "exceptionalJavelin",
+              "name": "",
+              "type": "section",
+              "defaultExpanded": false,
+              "children": [
+                {
+                  "id": "bth_9ja",
+                  "name": "War Javelin",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_9pi",
+                  "name": "Great Pilum",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_9s9",
+                  "name": "Simbilan",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_9gl",
+                  "name": "Spiculum",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_9ts",
+                  "name": "Harpoon",
+                  "type": "checkbox"
+                }
+              ]
+            },
+            {
               "id": "exceptionalKatar",
               "name": "Katar",
               "type": "section",
@@ -2136,6 +2202,39 @@
                 {
                   "id": "bth_ci3",
                   "name": "Diadem",
+                  "type": "checkbox"
+                }
+              ]
+            },
+            {
+              "id": "eliteJavelin",
+              "name": "",
+              "type": "section",
+              "defaultExpanded": false,
+              "children": [
+                {
+                  "id": "bth_7ja",
+                  "name": "Hyperion Javelin",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_7pi",
+                  "name": "Stygian Pilum",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_7s7",
+                  "name": "Balrog Spear",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_7gl",
+                  "name": "Ghost Glaive",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_7ts",
+                  "name": "Winged Harpoon",
                   "type": "checkbox"
                 }
               ]
