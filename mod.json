@@ -225,6 +225,245 @@
 			]
 		},
 		{
+			"id":"lightbeamGems",
+			"name":"Light Beam on Gems",
+			"description":"Apply a light beam effect on gem drops.",
+			"type":"section",
+			"children":[
+				{
+					"id":"amethyst",
+					"name":"Amethyst",
+					"type":"section",
+					"defaultExpanded":false,
+					"children":[
+						{
+							"id":"lbg_gcv",
+							"name":"Chipped Amethyst",
+							"type":"checkbox"
+						},
+						{
+							"id":"lbg_gfv",
+							"name":"Flawed Amethyst",
+							"type":"checkbox"
+						},
+						{
+							"id":"lbg_gsv",
+							"name":"Amethyst",
+							"type":"checkbox"
+						},
+						{
+							"id":"lbg_gzv",
+							"name":"Flawless Amethyst",
+							"type":"checkbox"
+						},
+						{
+							"id":"lbg_gpv",
+							"name":"Perfect Amethyst",
+							"type":"checkbox"
+						}
+					]
+				},
+				{
+					"id":"diamond",
+					"name":"Diamond",
+					"type":"section",
+					"defaultExpanded":false,
+					"children":[
+						{
+							"id":"lbg_gcw",
+							"name":"Chipped Diamond",
+							"type":"checkbox"
+						},
+						{
+							"id":"lbg_gfw",
+							"name":"Flawed Diamond",
+							"type":"checkbox"
+						},
+						{
+							"id":"lbg_gsw",
+							"name":"Diamond",
+							"type":"checkbox"
+						},
+						{
+							"id":"lbg_glw",
+							"name":"Flawless Diamond",
+							"type":"checkbox"
+						},
+						{
+							"id":"lbg_gpw",
+							"name":"Perfect Diamond",
+							"type":"checkbox"
+						}
+					]
+				},
+				{
+					"id":"emerald",
+					"name":"Emerald",
+					"type":"section",
+					"defaultExpanded":false,
+					"children":[
+						{
+							"id":"lbg_gcg",
+							"name":"Chipped Emerald",
+							"type":"checkbox"
+						},
+						{
+							"id":"lbg_gfg",
+							"name":"Flawed Emerald",
+							"type":"checkbox"
+						},
+						{
+							"id":"lbg_gsg",
+							"name":"Emerald",
+							"type":"checkbox"
+						},
+						{
+							"id":"lbg_glg",
+							"name":"Flawless Emerald",
+							"type":"checkbox"
+						},
+						{
+							"id":"lbg_gpg",
+							"name":"Perfect Emerald",
+							"type":"checkbox"
+						}
+					]
+				},
+				{
+					"id":"ruby",
+					"name":"Ruby",
+					"type":"section",
+					"defaultExpanded":false,
+					"children":[
+						{
+							"id":"lbg_gcr",
+							"name":"Chipped Ruby",
+							"type":"checkbox"
+						},
+						{
+							"id":"lbg_gfr",
+							"name":"Flawed Ruby",
+							"type":"checkbox"
+						},
+						{
+							"id":"lbg_gsr",
+							"name":"Ruby",
+							"type":"checkbox"
+						},
+						{
+							"id":"lbg_glr",
+							"name":"Flawless Ruby",
+							"type":"checkbox"
+						},
+						{
+							"id":"lbg_gpr",
+							"name":"Perfect Ruby",
+							"type":"checkbox"
+						}
+					]
+				},
+				{
+					"id":"sapphire",
+					"name":"Sapphire",
+					"type":"section",
+					"defaultExpanded":false,
+					"children":[
+						{
+							"id":"lbg_gcb",
+							"name":"Chipped Sapphire",
+							"type":"checkbox"
+						},
+						{
+							"id":"lbg_gfb",
+							"name":"Flawed Sapphire",
+							"type":"checkbox"
+						},
+						{
+							"id":"lbg_gsb",
+							"name":"Sapphire",
+							"type":"checkbox"
+						},
+						{
+							"id":"lbg_glb",
+							"name":"Flawless Sapphire",
+							"type":"checkbox"
+						},
+						{
+							"id":"lbg_gpb",
+							"name":"Perfect Sapphire",
+							"type":"checkbox"
+						}
+					]
+				},
+				{
+					"id":"skull",
+					"name":"Skull",
+					"type":"section",
+					"defaultExpanded":false,
+					"children":[
+						{
+							"id":"lbg_skc",
+							"name":"Chipped Skull",
+							"type":"checkbox"
+						},
+						{
+							"id":"lbg_skf",
+							"name":"Flawed Skull",
+							"type":"checkbox"
+						},
+						{
+							"id":"lbg_sku",
+							"name":"Skull",
+							"type":"checkbox"
+						},
+						{
+							"id":"lbg_skl",
+							"name":"Flawless Skull",
+							"type":"checkbox"
+						},
+						{
+							"id":"lbg_skz",
+							"name":"Perfect Skull",
+							"type":"checkbox"
+						}
+					]
+				},
+				{
+					"id":"topaz",
+					"name":"Topaz",
+					"type":"section",
+					"defaultExpanded":false,
+					"children":[
+						{
+							"id":"lbg_gcy",
+							"name":"Chipped Topaz",
+							"type":"checkbox"
+						},
+						{
+							"id":"lbg_gfy",
+							"name":"Flawed Topaz",
+							"type":"checkbox"
+						},
+						{
+							"id":"lbg_gsy",
+							"name":"Topaz",
+							"type":"checkbox"
+						},
+						{
+							"id":"lbg_gly",
+							"name":"Flawless Topaz",
+							"type":"checkbox"
+						},
+						{
+							"id":"lbg_gpy",
+							"name":"Perfect Topaz",
+							"type":"checkbox"
+						}
+					]
+				}
+			]
+		},
+		{
 			"id":"highlightBases",
 			"name":"Highlight Bases",
 			"description":"Highlight desirable runeword / recipe bases with a colorful suffix. Due to technical limitations, this will also apply to magic, rare, unique, and crafted items.",
