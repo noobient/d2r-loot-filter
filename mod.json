@@ -320,6 +320,39 @@
               ]
             },
             {
+              "id": "normalBarbarianHelm",
+              "name": "Barbarian Helm",
+              "type": "section",
+              "defaultExpanded": false,
+              "children": [
+                {
+                  "id": "bth_",
+                  "name": "Jawbone Cap",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_ba2",
+                  "name": "Fanged Helm",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_ba3",
+                  "name": "Horned Helm",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_ba4",
+                  "name": "Assault Helmet",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_ba5",
+                  "name": "Avenger Guard",
+                  "type": "checkbox"
+                }
+              ]
+            },
+            {
               "id": "normalBelt",
               "name": "Belt",
               "type": "section",
@@ -824,6 +857,39 @@
               ]
             },
             {
+              "id": "exceptionalBarbarianHelm",
+              "name": "Barbarian Helm",
+              "type": "section",
+              "defaultExpanded": false,
+              "children": [
+                {
+                  "id": "bth_ba6",
+                  "name": "Jawbone Visor",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_ba7",
+                  "name": "Lion Helm",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_ba8",
+                  "name": "Rage Mask",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_ba9",
+                  "name": "Savage Helmet",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_baa",
+                  "name": "Slayer Guard",
+                  "type": "checkbox"
+                }
+              ]
+            },
+            {
               "id": "exceptionalBelt",
               "name": "Belt",
               "type": "section",
@@ -1318,6 +1384,39 @@
                 {
                   "id": "bth_uar",
                   "name": "Sacred Armor",
+                  "type": "checkbox"
+                }
+              ]
+            },
+            {
+              "id": "eliteBarbarianHelm",
+              "name": "Barbarian Helm",
+              "type": "section",
+              "defaultExpanded": false,
+              "children": [
+                {
+                  "id": "bth_bab",
+                  "name": "Carnage Helm",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_bac",
+                  "name": "Fury Visor",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_bad",
+                  "name": "Destroyer Helm",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_bae",
+                  "name": "Conqueror Crown",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_baf",
+                  "name": "Guardian Crown",
                   "type": "checkbox"
                 }
               ]
