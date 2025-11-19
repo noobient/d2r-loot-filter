@@ -865,6 +865,34 @@
               ]
             },
             {
+              "id": "normalThrowing",
+              "name": "Throwing",
+              "type": "section",
+              "defaultExpanded": false,
+              "children": [
+                {
+                  "id": "bth_tkf",
+                  "name": "Throwing Knife",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_bkf",
+                  "name": "Balanced Knife",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_tax",
+                  "name": "Throwing Axe",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_bal",
+                  "name": "Balanced Axe",
+                  "type": "checkbox"
+                }
+              ]
+            },
+            {
               "id": "normalWand",
               "name": "Wand",
               "type": "section",
@@ -1524,6 +1552,34 @@
               ]
             },
             {
+              "id": "exceptionalThrowing",
+              "name": "Throwing",
+              "type": "section",
+              "defaultExpanded": false,
+              "children": [
+                {
+                  "id": "bth_9tk",
+                  "name": "Battle Dart",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_9bk",
+                  "name": "War Dart",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_9ta",
+                  "name": "Francisca",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_9b8",
+                  "name": "Hurlbat",
+                  "type": "checkbox"
+                }
+              ]
+            },
+            {
               "id": "exceptionalWand",
               "name": "Wand",
               "type": "section",
@@ -2178,6 +2234,34 @@
                 {
                   "id": "bth_7p7",
                   "name": "War Pike",
+                  "type": "checkbox"
+                }
+              ]
+            },
+            {
+              "id": "eliteThrowing",
+              "name": "Throwing",
+              "type": "section",
+              "defaultExpanded": false,
+              "children": [
+                {
+                  "id": "bth_",
+                  "name": "",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_",
+                  "name": "",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_",
+                  "name": "",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_",
+                  "name": "",
                   "type": "checkbox"
                 }
               ]
