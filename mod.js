@@ -58,26 +58,12 @@ function highlightGems(jsonFile)
 			case "gpv": // Perfect Amethyst
 				gemColor = `ÿc;`
 				break;
-			case "gcy": // Chipped Topaz
-			case "gfy": // Flawed Topaz
-			case "gsy": // Topaz
-			case "gly": // Flawless Topaz
-			case "gpy": // Perfect Topaz
-				gemColor = `ÿc9`;
-				break;
-			case "skc": // Chipped Skull
-			case "skf": // Flawed Skull
-			case "sku": // Skull
-			case "skl": // Flawless Skull
-			case "skz": // Perfect Skull
-				gemColor = `ÿc5`;
-				break;
-			case "gcb": // Chipped Sapphire
-			case "gfb": // Flawed Sapphire
-			case "gsb": // Sapphire
-			case "glb": // Flawless Sapphire
-			case "gpb": // Perfect Sapphire
-				gemColor = `ÿcN`;
+			case "gcw": // Chipped Diamond
+			case "gfw": // Flawed Diamond
+			case "gsw": // Diamond
+			case "glw": // Flawless Diamond
+			case "gpw": // Perfect Diamond
+				gemColor = `ÿcF`;
 				break;
 			case "gcg": // Chipped Emerald
 			case "gfg": // Flawed Emerald
@@ -93,12 +79,26 @@ function highlightGems(jsonFile)
 			case "gpr": // Perfect Ruby
 				gemColor = `ÿcU`;
 				break;
-			case "gcw": // Chipped Diamond
-			case "gfw": // Flawed Diamond
-			case "gsw": // Diamond
-			case "glw": // Flawless Diamond
-			case "gpw": // Perfect Diamond
-				gemColor = `ÿcF`;
+			case "gcb": // Chipped Sapphire
+			case "gfb": // Flawed Sapphire
+			case "gsb": // Sapphire
+			case "glb": // Flawless Sapphire
+			case "gpb": // Perfect Sapphire
+				gemColor = `ÿcN`;
+				break;
+			case "skc": // Chipped Skull
+			case "skf": // Flawed Skull
+			case "sku": // Skull
+			case "skl": // Flawless Skull
+			case "skz": // Perfect Skull
+				gemColor = `ÿc5`;
+				break;
+			case "gcy": // Chipped Topaz
+			case "gfy": // Flawed Topaz
+			case "gsy": // Topaz
+			case "gly": // Flawless Topaz
+			case "gpy": // Perfect Topaz
+				gemColor = `ÿc9`;
 				break;
 		}
 
