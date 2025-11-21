@@ -229,6 +229,7 @@
 			"name":"Light Beam on Gems",
 			"description":"Apply a light beam effect on gem drops.",
 			"type":"section",
+			"defaultExpanded":false,
 			"children":[
 				{
 					"id":"amethyst",
