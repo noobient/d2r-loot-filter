@@ -316,13 +316,13 @@ itemNames.forEach((item) =>
 			newName = `Full ÿc;Rejuvenationÿc0 Potion`;
 			break;
 		case "cm1": // Small Charm
-			newName = `Small Charm ÿcO•`;
+			newName = item.enUS + ` ÿc5[ÿc:•ÿc5]`;
 			break;
 		case "cm2": // Large Charm
-			newName = `Large Charm ÿcO••`;
+			newName = item.enUS + ` ÿc5[ÿc:••ÿc5]`;
 			break;
 		case "cm3": // Grand Charm
-			newName = `Grand Charm ÿcO•••`;
+			newName = item.enUS + ` ÿc5[ÿc:•••ÿc5]`;
 			break;
 		case "jew": // Jewel
 			newName = `• Jewel •ÿcN`;
